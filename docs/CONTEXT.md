@@ -64,6 +64,7 @@ Biomes O' Plenty, Dynamic Trees + DT BoP, Quark + AutoRegLib, Mowzie's Mobs (+ l
 ### Что осталось
 - [ ] Решить, какие правила против толп мобов включать: `maxEntityCramming 8`, реже деревни бараку, отключить Monster Boxes и пиратов Quark. Это меняет геймплей, поэтому ждёт решения.
 - [ ] В мирах, где уже сгенерированы замки Castle Dungeons, они остались: это ванильные блоки и спавнеры. Новые замки больше не появятся.
-- [ ] Около 400 ошибок спрайтов BuildCraft при загрузке: игнорировать, если трубы выглядят нормально, либо убрать BuildCraft.
+- [x] Невидимые трубы BuildCraft: OptiFine не мог загрузить ~800 спрайтов BuildCraft. Исправлено `useSwappableSprites=false` в `config/buildcraft/main.cfg` (20.11.2026), ошибок `Error uploading sprite single` больше нет.
+- [ ] Трубы ProjectRed в мире рисуются плоскими цветными столбами (иконки в инвентаре нормальные). Проверяется настройками OptiFine (Fast Render, Render Regions, анизотропная фильтрация).
 - [ ] Перенести всё в основную сборку. В старых мирах включить `/gamerule doMobSpawning true`.
 - [ ] (опционально) spark для профилирования, если снова будут фризы.
