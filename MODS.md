@@ -48,7 +48,7 @@
 | 40 | `Forgelin-Continuous-2.0.0.1.jar` | [Forgelin-Continuous](https://modrinth.com/mod/forgelin-continuous/version/5wvQO2Ks) | `26757ab3c773ac65863a1b91c5d4c9b87a6fe4bd` |
 | 41 | `FriendlyFire_1.12.2_1.5.8.jar` | [Friendly Fire](https://modrinth.com/mod/friendly-fire/version/GvJfiVwR) | `4515a22becf3612513c7d4d58f3db737467da6e5` |
 | 42 | `Future-MC-0.2.21.jar` | [Future MC](https://modrinth.com/mod/future-mc/version/v3ZmWrP5) | `641c6b63f40d6c5846b93f61ab661a99a59d03c3` |
-| 43 | `FutureVersions v1.3.1.jar` | CurseForge / архив (нет на Modrinth) | `949a233ed26289cc7c8127900f387cb16560dca3` |
+| 43 | `modernbackports-0.0.1.jar` | свой мод, приватный репозиторий masterRaizer/modernbackports (заменил Future Versions, этап 01b) | — |
 | 44 | `Gobber-1.12.2-1.1.202.jar` | CurseForge / архив (нет на Modrinth) | `6bb090ec3d306a00116a908944ec7bee68c652b9` |
 | 45 | `GokiStats-1.2.10.jar` | CurseForge / архив (нет на Modrinth) | `caa3d3fac833cf6d24f44c081783ba3b79a9cf48` |
 | 46 | `Hwyla-1.8.26-B41_1.12.2.jar` | [Hwyla](https://modrinth.com/mod/hwyla/version/pgcAdhbb) | `7280d5c0dab42436549bcefc63ff64a1049e5501` |
