@@ -171,3 +171,14 @@
 | 163 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
 | 164 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
 | 165 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
+
+## Моды в подпапке `mods/1.12.2/`
+
+Forge загружает и их.
+
+| Файл | SHA-1 |
+|---|---|
+| `ChickenASM-1.12-1.0.2.7.jar` | `ed72a18e64a7eb628ec14832a7e02128904cc6f7` |
+
+`VanillaFix` лежит внутри `VanillaIcecreamFix-1.0.5.jar` (форк), отдельного jar нет.
+`mods/memory_repo/` — служебный кэш Forge (встроенные библиотеки модов), его не трогать.
