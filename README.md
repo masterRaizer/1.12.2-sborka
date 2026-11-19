@@ -10,7 +10,7 @@
 | `minecraft/config/` | все конфиги модов |
 | `minecraft/options*.txt` | настройки игры и OptiFine |
 | `instance/` | `instance.cfg` (память, JVM-аргументы) и `mmc-pack.json` (версии MC и Forge) для Prism |
-| `tools/` | Python-скрипты: патчи Enchanting Plus и Tinkers' Addons, правки производительности, включение спавна в мирах |
+| `tools/` | `gen_prompts.py` собирает готовые промпты и «ПОРЯДОК ЗАПУСКА.txt» из `docs/backport-prompts.md`; Python-скрипты: патчи Enchanting Plus и Tinkers' Addons, правки производительности, включение спавна в мирах |
 | [`docs/CONTEXT.md`](docs/CONTEXT.md) | **сводка всей проделанной работы и что осталось** |
 | [`docs/structure-mods.md`](docs/structure-mods.md) | какие постройки спавнят толпы мобов и как это настроить |
 | [`docs/session-log.md`](docs/session-log.md) | полный лог переписки по оптимизации |
