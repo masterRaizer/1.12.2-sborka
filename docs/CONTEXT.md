@@ -25,6 +25,7 @@
 | `5_original_tinkersaddons` | оригинальный Tinkers' Addons | заменён пропатченным |
 | `6_custommobspawner` | CustomMobSpawner | отключал ванильный спавн (`doMobSpawning false`), а Mo'Creatures в сборке нет |
 | `7_replaced_by_update` | CodeChickenLib 3.2.2 | обновлён до 3.2.3.358 ради Ender Storage |
+| `8_castle_dungeons` | Castle Dungeons + его конфиг | замки с десятками спавнеров давали жуткие лаги, решено убрать совсем (19.11.2026) |
 
 Файлы с чужими именами переименованы по содержимому: TravelersTitles, Gobber, Artifacts, SwingThroughGrass, LargeOreDeposits.
 
@@ -57,11 +58,11 @@ Biomes O' Plenty, Dynamic Trees + DT BoP, Quark + AutoRegLib, Mowzie's Mobs (+ l
 ## Открытые вопросы
 
 ### Постройки, которые спавнят толпы мобов
-Подробно в [structure-mods.md](structure-mods.md). Главный виновник **Castle Dungeons**, дальше Mowzie's Mobs (деревни бараку), Raids Backport (аванпосты), Quark (Monster Boxes, пиратские корабли), Better Mineshafts.
+Подробно в [structure-mods.md](structure-mods.md). Главный виновник, **Castle Dungeons**, удалён. Остались Mowzie's Mobs (деревни бараку), Raids Backport (аванпосты), Quark (Monster Boxes, пиратские корабли), Better Mineshafts.
 
 ### Что осталось
-- [ ] Решить, какие правила против толп мобов включать: `maxEntityCramming 8`, `section-size` замков 24 → 32–40, реже деревни бараку, отключить Monster Boxes и пиратов Quark. Это меняет геймплей, поэтому ждёт решения.
-- [ ] Проверить в игре замок с толпой мобов после установки Entity Culling.
+- [ ] Решить, какие правила против толп мобов включать: `maxEntityCramming 8`, реже деревни бараку, отключить Monster Boxes и пиратов Quark. Это меняет геймплей, поэтому ждёт решения.
+- [ ] В мирах, где уже сгенерированы замки Castle Dungeons, они остались: это ванильные блоки и спавнеры. Новые замки больше не появятся.
 - [ ] Около 400 ошибок спрайтов BuildCraft при загрузке: игнорировать, если трубы выглядят нормально, либо убрать BuildCraft.
 - [ ] Перенести всё в основную сборку. В старых мирах включить `/gamerule doMobSpawning true`.
 - [ ] (опционально) spark для профилирования, если снова будут фризы.

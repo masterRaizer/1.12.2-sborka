@@ -1,6 +1,6 @@
 # Сборка 1.12.2 (оптимизированная)
 
-Самодельная сборка Minecraft **1.12.2** на **Forge 14.23.5.2860** для Prism Launcher. 166 модов: техника (IC2, Mekanism, Thermal, Ender IO, AE2, Draconic), Tinkers, Biomes O' Plenty, Quark, Mowzie's Mobs, Atum и др.
+Самодельная сборка Minecraft **1.12.2** на **Forge 14.23.5.2860** для Prism Launcher. 165 модов: техника (IC2, Mekanism, Thermal, Ender IO, AE2, Draconic), Tinkers, Biomes O' Plenty, Quark, Mowzie's Mobs, Atum и др.
 
 ## Что в репозитории
 

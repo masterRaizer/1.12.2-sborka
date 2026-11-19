@@ -1,6 +1,6 @@
 # Список модов
 
-Всего jar-файлов: **166**. Minecraft 1.12.2, Forge 14.23.5.2860.
+Всего jar-файлов: **165**. Minecraft 1.12.2, Forge 14.23.5.2860.
 
 Сами jar-файлы в репозиторий не выложены: многие моды запрещают перезалив. Качайте по ссылкам (Modrinth) или с CurseForge по названию. SHA-1 нужен, чтобы проверить, что версия та же.
 
@@ -120,55 +120,54 @@
 | 112 | `buildcraft-robotics-7.99.24.1.jar` | [BuildCraft Robotics](https://modrinth.com/mod/buildcraft-robotics/version/FF75vap1) | `41d7884355ba33ffd6aed86dafbef767b18465fb` |
 | 113 | `buildcraft-silicon-7.99.24.1.jar` | [BuildCraft Silicon](https://modrinth.com/mod/buildcraft-silicon/version/YfDhJnYu) | `52e5271c07170a6ddb14e513406dc92c79459919` |
 | 114 | `buildcraft-transport-7.99.24.1.jar` | [BuildCraft Transport](https://modrinth.com/mod/buildcraft-transport/version/7HRkNBi1) | `6d993d9eb6c164dd9e5a1b878903994be6e5c694` |
-| 115 | `castle_dungeons-2.2p1-1.12.2-forge.jar` | CurseForge / архив (нет на Modrinth) | `22590caf08793890ebdf7c57d446409b400eda26` |
-| 116 | `champions-1.12.2-1.0.11.10.jar` | [Champions](https://modrinth.com/mod/champions/version/pBLPv0i4) | `9f7e8a83d41fa923634dff487bec545b99c8e7cc` |
-| 117 | `collective-1.12.2-3.0.jar` | CurseForge / архив (нет на Modrinth) | `c4c9a362baf6404024d44cd63e673eb7a44494ba` |
-| 118 | `conarm_1.12.2_1.2.5.10.jar` | [Construct's Armory](https://modrinth.com/mod/constructs-armory/version/7q0icLtb) | `373e8f6f56605d7eacb5d7d2f4e1ffea5e6d844b` |
-| 119 | `corpse-1.12.2-1.0.8.jar` | CurseForge / архив (нет на Modrinth) | `e367bec5785091dc9c928c1a95672a4774b0f0fd` |
-| 120 | `cucumber-1.12.2-1.1.3.jar` | [Cucumber Library](https://modrinth.com/mod/cucumber/version/qGk4NMk6) | `8be30f1977cd9df566dfbae2977793335e576591` |
-| 121 | `disenchanter1.121.7.jar` | CurseForge / архив (нет на Modrinth) | `9b089de70d70f15225eee504968be9101e433441` |
-| 122 | `endercore-1.12.2-0.5.78.jar` | [EnderCore](https://modrinth.com/mod/endercore/version/ObLYMdMS) | `96c2389a5fdb2968cd69fc80b478a9a0b0ecc441` |
-| 123 | `enderio-1.12.2-5.3.72.jar` | [Ender IO](https://modrinth.com/mod/enderio/version/ozde4Meh) | `60d62a0dab5b12c527fd8eda1d353888e3406175` |
-| 124 | `energyconverters_1.12.2_1.3.7.30.jar` | CurseForge / архив (нет на Modrinth) | `ec35d6517e2a819fdf6c1413812d66159ef889c2` |
-| 125 | `environmentalcreepers-1.12.2-1.5.0.jar` | [Environmental Creepers](https://modrinth.com/mod/environmental-creepers/version/zW9V6a0b) | `b657e4e5c9f4987048e9bd0ba483b23704f9112b` |
-| 126 | `fencejumper-1.12-1.0.5.jar` | CurseForge / архив (нет на Modrinth) | `e6f23c18081d59deb55a625e1291b9fe9c1157de` |
-| 127 | `fixedanvilrepaircost_1.12.2-1.6.jar` | CurseForge / архив (нет на Modrinth) | `c9b56c54b51377780346bd18888ff2f58a28affd` |
-| 128 | `forestry_1.12.2-5.8.2.427.jar` | [Forestry](https://modrinth.com/mod/forestry/version/zycSza6a) | `63669c2a95126acde241476783e2feb87f6b50e0` |
-| 129 | `forgeendertech-1.12.2-4.5.6.1-build.0648.jar` | CurseForge / архив (нет на Modrinth) | `747928e38d394c03bd7996568ae3baea4dd566cf` |
-| 130 | `furniture-6.3.2-1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `3214f030651e7585a076bd96ba3863e2fa1b6676` |
-| 131 | `globalxp-1.12.2-v1.4.10.jar` | [Global XP](https://modrinth.com/mod/global-xp/version/rENQ2BpG) | `d8f188bc98bdc369cb168a78c064398485a0834b` |
-| 132 | `gravitationsuite-3.1.1.jar` | CurseForge / архив (нет на Modrinth) | `1040529ce75fc685afe2e1fb407f516f02245c55` |
-| 133 | `hammerx_1.12_1.1.3.jar` | CurseForge / архив (нет на Modrinth) | `984444d6ef9f32932ffceabd588985bec4abf2f5` |
-| 134 | `industrialcraft-2-2.8.170-ex112.jar` | CurseForge / архив (нет на Modrinth) | `2f5597fc13866f8e88fbb7359046511cac2f5371` |
-| 135 | `infinitetrading_1.12.2-1.4.jar` | CurseForge / архив (нет на Modrinth) | `5e566afb129dfdeb26f56a9bcd3182254ac2ca9e` |
-| 136 | `inventorysorter_1.12.2_1.12.049.jar` | CurseForge / архив (нет на Modrinth) | `d05f559c487f900416adf62a075c771c356aec14` |
-| 137 | `ironchest_1.12.2_7.0.67.844.jar` | CurseForge / архив (нет на Modrinth) | `35759dfd73a40543f86492e97b27c2d1b189c7a9` |
-| 138 | `ironfurnaces_1.12.2_1.3.jar` | CurseForge / архив (нет на Modrinth) | `ef74a6ff86d85171532b6f59661a1ddeac1ac4cf` |
-| 139 | `jei_1.12.2-4.15.0.287.jar` | [Just Enough Items (JEI)](https://modrinth.com/mod/jei/version/ZglJgirV) | `5a0f853c8f8738e69aa7ae520b03a41cada929fe` |
-| 140 | `llibrary-1.7.20-1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `fba97f9dbe750f17904c00db8ff58291595106b8` |
-| 141 | `loliasm-5.32.jar` | CurseForge / архив (нет на Modrinth) | `2402aa4be7740722f34f04cd8574f3eeb749d508` |
-| 142 | `lootr-1.12.2-0.6.2.jar` | [Lootr](https://modrinth.com/mod/lootr/version/fTrJqmfv) | `3d21562963b4cdffeb7b5361c54b5ac560e1708f` |
-| 143 | `materialis-1.12.2-1.2.5.jar` | [Materialis](https://modrinth.com/mod/materialis/version/vnh0kps8) | `4c315d6dc18af970fd754f4c387aa89cbdb5037a` |
-| 144 | `medivalmusic-1.1.jar` | CurseForge / архив (нет на Modrinth) | `c722b2e93b634a655e6aa624bab8e66a774752b2` |
-| 145 | `mekanismgenerators-1.12.2-9.8.3.390.jar` | [Mekanism Generators](https://modrinth.com/mod/mekanism-generators/version/b84Y8s7p) | `6980bbbc9d18c5dea7e2242fe9d542da2d41c481` |
-| 146 | `mekanismtools-1.12.2-9.8.3.390.jar` | [Mekanism Tools](https://modrinth.com/mod/mekanism-tools/version/uUgmlBOu) | `8c32f71f2db7a695abc8413aa7dfe8c28c485585` |
-| 147 | `moartinkers-0.6.0.jar` | CurseForge / архив (нет на Modrinth) | `bca8e21502c69fc7b16bf91b247afced698c67f3` |
-| 148 | `modularui-3.1.6.jar` | [ModularUI](https://modrinth.com/mod/modularui/version/1twp2z8Y) | `be2d067fe4e8815c5c025416019f9a8037d26be0` |
-| 149 | `morebuckets-1.12.2-1.0.4.jar` | [More Buckets](https://modrinth.com/mod/more-buckets/version/dRuDTT3t) | `ab244193c5c998d61d50640c633165aac3c842fe` |
-| 150 | `mowziesmobs-1.5.8.jar` | CurseForge / архив (нет на Modrinth) | `67e9952fa9aff4441959a4ceaa0e1b67dd7e5c00` |
-| 151 | `oreberries-1.12.x-0.5.0.jar` | CurseForge / архив (нет на Modrinth) | `5bbdc17c1fffa5f62e58aa54034ca9f5dd8bde5c` |
-| 152 | `simple_hammers-0.0.1-BACKPORT.jar` | CurseForge / архив (нет на Modrinth) | `d6f3d281c706194667aa1ea9e38c0f3977ed6e96` |
-| 153 | `sit_1.12.x_v1.1.1.jar` | CurseForge / архив (нет на Modrinth) | `707bb3951492fc065158b67aa402039f101782bf` |
-| 154 | `taiga-1.12.2-1.3.4.jar` | CurseForge / архив (нет на Modrinth) | `0322c349f02c20a0e2f9d9434a66b74b14db4221` |
-| 155 | `teletoro_1.12.2_26.jar` | CurseForge / архив (нет на Modrinth) | `6115147de29fac3021acbb5654c6413ea1fcbcec` |
-| 156 | `tinkers_reforged-1.5.6.jar` | CurseForge / архив (нет на Modrinth) | `58daa35d278177f2842f39b56aec9cd0ff07b0ed` |
-| 157 | `tinkersarsenal-0.7.0.jar` | CurseForge / архив (нет на Modrinth) | `f3915218188aea55fcabe788902f718f818dce10` |
-| 158 | `tinkersjei-1.2.jar` | CurseForge / архив (нет на Modrinth) | `0ee37cbd099fd3693f1f45673ba498ce7e3a3849` |
-| 159 | `tinkertoolleveling-1.12.2-1.1.0.jar` | CurseForge / архив (нет на Modrinth) | `69705dd5de7c9cd54f6fdb8198b959f93b7d1400` |
-| 160 | `torcherino-7.6.jar` | CurseForge / архив (нет на Modrinth) | `8dc9f6bce5c750a6e7126564efbb7c1db571c8ed` |
-| 161 | `torohealth-1.12.2-11.jar` | CurseForge / архив (нет на Modrinth) | `6302c65f1c4fd28266d2c4ea33e12c8783e84c9b` |
-| 162 | `u_team_core-1.12.2-2.2.5.147.jar` | CurseForge / архив (нет на Modrinth) | `9cccef4f435ac2cace0c8e87f59e2bc46e92a33a` |
-| 163 | `unseens-nether-backport-0.7.jar` | CurseForge / архив (нет на Modrinth) | `48f3bab6a916d2323ec7148ff30bdb4dd04b273f` |
-| 164 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
-| 165 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
-| 166 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
+| 115 | `champions-1.12.2-1.0.11.10.jar` | [Champions](https://modrinth.com/mod/champions/version/pBLPv0i4) | `9f7e8a83d41fa923634dff487bec545b99c8e7cc` |
+| 116 | `collective-1.12.2-3.0.jar` | CurseForge / архив (нет на Modrinth) | `c4c9a362baf6404024d44cd63e673eb7a44494ba` |
+| 117 | `conarm_1.12.2_1.2.5.10.jar` | [Construct's Armory](https://modrinth.com/mod/constructs-armory/version/7q0icLtb) | `373e8f6f56605d7eacb5d7d2f4e1ffea5e6d844b` |
+| 118 | `corpse-1.12.2-1.0.8.jar` | CurseForge / архив (нет на Modrinth) | `e367bec5785091dc9c928c1a95672a4774b0f0fd` |
+| 119 | `cucumber-1.12.2-1.1.3.jar` | [Cucumber Library](https://modrinth.com/mod/cucumber/version/qGk4NMk6) | `8be30f1977cd9df566dfbae2977793335e576591` |
+| 120 | `disenchanter1.121.7.jar` | CurseForge / архив (нет на Modrinth) | `9b089de70d70f15225eee504968be9101e433441` |
+| 121 | `endercore-1.12.2-0.5.78.jar` | [EnderCore](https://modrinth.com/mod/endercore/version/ObLYMdMS) | `96c2389a5fdb2968cd69fc80b478a9a0b0ecc441` |
+| 122 | `enderio-1.12.2-5.3.72.jar` | [Ender IO](https://modrinth.com/mod/enderio/version/ozde4Meh) | `60d62a0dab5b12c527fd8eda1d353888e3406175` |
+| 123 | `energyconverters_1.12.2_1.3.7.30.jar` | CurseForge / архив (нет на Modrinth) | `ec35d6517e2a819fdf6c1413812d66159ef889c2` |
+| 124 | `environmentalcreepers-1.12.2-1.5.0.jar` | [Environmental Creepers](https://modrinth.com/mod/environmental-creepers/version/zW9V6a0b) | `b657e4e5c9f4987048e9bd0ba483b23704f9112b` |
+| 125 | `fencejumper-1.12-1.0.5.jar` | CurseForge / архив (нет на Modrinth) | `e6f23c18081d59deb55a625e1291b9fe9c1157de` |
+| 126 | `fixedanvilrepaircost_1.12.2-1.6.jar` | CurseForge / архив (нет на Modrinth) | `c9b56c54b51377780346bd18888ff2f58a28affd` |
+| 127 | `forestry_1.12.2-5.8.2.427.jar` | [Forestry](https://modrinth.com/mod/forestry/version/zycSza6a) | `63669c2a95126acde241476783e2feb87f6b50e0` |
+| 128 | `forgeendertech-1.12.2-4.5.6.1-build.0648.jar` | CurseForge / архив (нет на Modrinth) | `747928e38d394c03bd7996568ae3baea4dd566cf` |
+| 129 | `furniture-6.3.2-1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `3214f030651e7585a076bd96ba3863e2fa1b6676` |
+| 130 | `globalxp-1.12.2-v1.4.10.jar` | [Global XP](https://modrinth.com/mod/global-xp/version/rENQ2BpG) | `d8f188bc98bdc369cb168a78c064398485a0834b` |
+| 131 | `gravitationsuite-3.1.1.jar` | CurseForge / архив (нет на Modrinth) | `1040529ce75fc685afe2e1fb407f516f02245c55` |
+| 132 | `hammerx_1.12_1.1.3.jar` | CurseForge / архив (нет на Modrinth) | `984444d6ef9f32932ffceabd588985bec4abf2f5` |
+| 133 | `industrialcraft-2-2.8.170-ex112.jar` | CurseForge / архив (нет на Modrinth) | `2f5597fc13866f8e88fbb7359046511cac2f5371` |
+| 134 | `infinitetrading_1.12.2-1.4.jar` | CurseForge / архив (нет на Modrinth) | `5e566afb129dfdeb26f56a9bcd3182254ac2ca9e` |
+| 135 | `inventorysorter_1.12.2_1.12.049.jar` | CurseForge / архив (нет на Modrinth) | `d05f559c487f900416adf62a075c771c356aec14` |
+| 136 | `ironchest_1.12.2_7.0.67.844.jar` | CurseForge / архив (нет на Modrinth) | `35759dfd73a40543f86492e97b27c2d1b189c7a9` |
+| 137 | `ironfurnaces_1.12.2_1.3.jar` | CurseForge / архив (нет на Modrinth) | `ef74a6ff86d85171532b6f59661a1ddeac1ac4cf` |
+| 138 | `jei_1.12.2-4.15.0.287.jar` | [Just Enough Items (JEI)](https://modrinth.com/mod/jei/version/ZglJgirV) | `5a0f853c8f8738e69aa7ae520b03a41cada929fe` |
+| 139 | `llibrary-1.7.20-1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `fba97f9dbe750f17904c00db8ff58291595106b8` |
+| 140 | `loliasm-5.32.jar` | CurseForge / архив (нет на Modrinth) | `2402aa4be7740722f34f04cd8574f3eeb749d508` |
+| 141 | `lootr-1.12.2-0.6.2.jar` | [Lootr](https://modrinth.com/mod/lootr/version/fTrJqmfv) | `3d21562963b4cdffeb7b5361c54b5ac560e1708f` |
+| 142 | `materialis-1.12.2-1.2.5.jar` | [Materialis](https://modrinth.com/mod/materialis/version/vnh0kps8) | `4c315d6dc18af970fd754f4c387aa89cbdb5037a` |
+| 143 | `medivalmusic-1.1.jar` | CurseForge / архив (нет на Modrinth) | `c722b2e93b634a655e6aa624bab8e66a774752b2` |
+| 144 | `mekanismgenerators-1.12.2-9.8.3.390.jar` | [Mekanism Generators](https://modrinth.com/mod/mekanism-generators/version/b84Y8s7p) | `6980bbbc9d18c5dea7e2242fe9d542da2d41c481` |
+| 145 | `mekanismtools-1.12.2-9.8.3.390.jar` | [Mekanism Tools](https://modrinth.com/mod/mekanism-tools/version/uUgmlBOu) | `8c32f71f2db7a695abc8413aa7dfe8c28c485585` |
+| 146 | `moartinkers-0.6.0.jar` | CurseForge / архив (нет на Modrinth) | `bca8e21502c69fc7b16bf91b247afced698c67f3` |
+| 147 | `modularui-3.1.6.jar` | [ModularUI](https://modrinth.com/mod/modularui/version/1twp2z8Y) | `be2d067fe4e8815c5c025416019f9a8037d26be0` |
+| 148 | `morebuckets-1.12.2-1.0.4.jar` | [More Buckets](https://modrinth.com/mod/more-buckets/version/dRuDTT3t) | `ab244193c5c998d61d50640c633165aac3c842fe` |
+| 149 | `mowziesmobs-1.5.8.jar` | CurseForge / архив (нет на Modrinth) | `67e9952fa9aff4441959a4ceaa0e1b67dd7e5c00` |
+| 150 | `oreberries-1.12.x-0.5.0.jar` | CurseForge / архив (нет на Modrinth) | `5bbdc17c1fffa5f62e58aa54034ca9f5dd8bde5c` |
+| 151 | `simple_hammers-0.0.1-BACKPORT.jar` | CurseForge / архив (нет на Modrinth) | `d6f3d281c706194667aa1ea9e38c0f3977ed6e96` |
+| 152 | `sit_1.12.x_v1.1.1.jar` | CurseForge / архив (нет на Modrinth) | `707bb3951492fc065158b67aa402039f101782bf` |
+| 153 | `taiga-1.12.2-1.3.4.jar` | CurseForge / архив (нет на Modrinth) | `0322c349f02c20a0e2f9d9434a66b74b14db4221` |
+| 154 | `teletoro_1.12.2_26.jar` | CurseForge / архив (нет на Modrinth) | `6115147de29fac3021acbb5654c6413ea1fcbcec` |
+| 155 | `tinkers_reforged-1.5.6.jar` | CurseForge / архив (нет на Modrinth) | `58daa35d278177f2842f39b56aec9cd0ff07b0ed` |
+| 156 | `tinkersarsenal-0.7.0.jar` | CurseForge / архив (нет на Modrinth) | `f3915218188aea55fcabe788902f718f818dce10` |
+| 157 | `tinkersjei-1.2.jar` | CurseForge / архив (нет на Modrinth) | `0ee37cbd099fd3693f1f45673ba498ce7e3a3849` |
+| 158 | `tinkertoolleveling-1.12.2-1.1.0.jar` | CurseForge / архив (нет на Modrinth) | `69705dd5de7c9cd54f6fdb8198b959f93b7d1400` |
+| 159 | `torcherino-7.6.jar` | CurseForge / архив (нет на Modrinth) | `8dc9f6bce5c750a6e7126564efbb7c1db571c8ed` |
+| 160 | `torohealth-1.12.2-11.jar` | CurseForge / архив (нет на Modrinth) | `6302c65f1c4fd28266d2c4ea33e12c8783e84c9b` |
+| 161 | `u_team_core-1.12.2-2.2.5.147.jar` | CurseForge / архив (нет на Modrinth) | `9cccef4f435ac2cace0c8e87f59e2bc46e92a33a` |
+| 162 | `unseens-nether-backport-0.7.jar` | CurseForge / архив (нет на Modrinth) | `48f3bab6a916d2323ec7148ff30bdb4dd04b273f` |
+| 163 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
+| 164 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
+| 165 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
