@@ -14,6 +14,8 @@
 | [`docs/CONTEXT.md`](docs/CONTEXT.md) | **сводка всей проделанной работы и что осталось** |
 | [`docs/structure-mods.md`](docs/structure-mods.md) | какие постройки спавнят толпы мобов и как это настроить |
 | [`docs/session-log.md`](docs/session-log.md) | полный лог переписки по оптимизации |
+| [`docs/backport-prompts.md`](docs/backport-prompts.md) | промпты для агента Claude: слияние бэкпортов в один мод, контент 1.13–1.21, проигравшие на голосованиях мобы и данжи |
+| [`docs/dimensions.md`](docs/dimensions.md) | какие измерения добавить, включая порты с новых версий |
 
 **Jar-файлов модов здесь нет.** Многие моды (например, OptiFine) запрещают перезалив, поэтому качайте их по [`MODS.md`](MODS.md).
 
