@@ -1,0 +1,27 @@
+{
+	"dependencies": "gb",
+	"populate": {
+		"pack_gobber": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "gb:gobber_ore"
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 17
+			},
+			"cluster-count": 1,
+			"min-height": 20,
+			"max-height": 30,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		}
+	}
+}

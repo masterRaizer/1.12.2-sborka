@@ -1,0 +1,30 @@
+{
+	"dependencies": "draconicevolution",
+	"populate": {
+		"pack_draconium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "draconicevolution:draconium_ore",
+					"properties": {
+						"type": "normal"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 18
+			},
+			"cluster-count": 1,
+			"min-height": 2,
+			"max-height": 8,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		}
+	}
+}
