@@ -158,7 +158,7 @@
 | 150 | `oreberries-1.12.x-0.5.0.jar` | CurseForge / архив (нет на Modrinth) | `5bbdc17c1fffa5f62e58aa54034ca9f5dd8bde5c` |
 | 151 | `simple_hammers-0.0.1-BACKPORT.jar` | CurseForge / архив (нет на Modrinth) | `d6f3d281c706194667aa1ea9e38c0f3977ed6e96` |
 | 152 | `sit_1.12.x_v1.1.1.jar` | CurseForge / архив (нет на Modrinth) | `707bb3951492fc065158b67aa402039f101782bf` |
-| 153 | `taiga-1.12.2-1.3.4.jar` | CurseForge / архив (нет на Modrinth) | `0322c349f02c20a0e2f9d9434a66b74b14db4221` |
+| 153 | `taiga-1.12.2-1.3.4-nocascade.jar` | CurseForge / архив (нет на Modrinth), **пропатчен** `tools/taiga_patch` (оригинал `0322c349f02c20a0e2f9d9434a66b74b14db4221`) | `b1c060af24c15ebea4794d865f6c4e2e7ad0eff` |
 | 154 | `teletoro_1.12.2_26.jar` | CurseForge / архив (нет на Modrinth) | `6115147de29fac3021acbb5654c6413ea1fcbcec` |
 | 155 | `tinkers_reforged-1.5.6.jar` | CurseForge / архив (нет на Modrinth) | `58daa35d278177f2842f39b56aec9cd0ff07b0ed` |
 | 156 | `tinkersarsenal-0.7.0.jar` | CurseForge / архив (нет на Modrinth) | `f3915218188aea55fcabe788902f718f818dce10` |
