@@ -59,6 +59,14 @@
   Клиент: грузится без ошибок текстур (по логу), визуально не смотрели (доступ к экрану не дан).
   Бэкап saves: `_saves-backup-before-tinkersbackports`. Справочник TC3 (данные, текстуры MIT): `F:\minecraft-mods\_ref\tc3`.
 
+- **Графика как на MCSkill HiTech** (22.11.2026). У HiTech меню Celeritas (Cleanroom 0.5.15 + Java 25), к нам не
+  переносится. Владелец выбрал «без Cleanroom»: OptiFine и JEI остаются. В 1.12.2-edit поставлены ScalingGUIs 1.0.3.0,
+  NeverEnoughAnimations 1.0.6, LegendaryTooltips 1.1.11 (официальная, Modrinth), все только клиент (на сервере в
+  `mods_client_only`). Настройки HiTech перенесены в `options.txt`/`optionsof.txt`, кроме дальности (12) и масштаба (4),
+  копии `*.bak-graphics`. Бэкап `_saves-backup-before-graphics`. Автотест `packautotest/scenarios/graphics.json` PASS,
+  FPS не просел. NEA не встраивается в наш MouseTweaks 2.10 (только предупреждение). Отчёт и таблица настроек:
+  `F:\minecraft-mods\_ref\graphics-menueport.md`. В packautotest добавлены шаги `hover`/`hoverSlot` и `gui: "modConfig:<modid>"`.
+
 ## Открытые задачи
 
 0. **Проверка в игре самим ассистентом (сделать первой).** Владелец хочет, чтобы ассистент сам всё проверял в клиенте

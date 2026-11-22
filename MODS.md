@@ -173,6 +173,9 @@
 | 165 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
 | 166 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `bd635c4c04a96b3285c8566ac6e12a0e8d4b9417` |
 | 167 | `TinkersComplement-1.12.2-0.4.3.jar` | CurseForge: Tinkers' Complement (file 2843439), поставлен 22.11.2026 вместе с tinkersbackports | `fa890e49c131e8ff93d8a4e6de0a5476083df6c3` |
+| 168 | `LegendaryTooltips-1.12.2-1.1.11.jar` | [Legendary Tooltips](https://modrinth.com/mod/legendary-tooltips/version/8rjxinu8), только клиент, поставлен 22.11.2026 (рамки подсказок как на MCSkill HiTech) | `f174a9ccf33df0bc1594713ef40dc8c0fce32205` |
+| 169 | `neverenoughanimations-1.0.6.jar` | NeverEnoughAnimations (CleanroomMC), jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `d5851c65d8bd5877e5af5438616abc5f32c75655` |
+| 170 | `scalingguis-1.12.2-1.0.3.0.jar` | ScalingGUIs (Spazley), CurseForge; jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `f98f8e33f539a7086bd6f6127211a506e3d7352b` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
