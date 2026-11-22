@@ -44,6 +44,18 @@
 
 ## Открытые задачи
 
+0. **Проверка в игре самим ассистентом (сделать первой).** Владелец хочет, чтобы ассистент сам всё проверял в клиенте
+   на его ноутбуке, без ручных проверок. Сделать в PackQuests клиентский автотест:
+   - если в `1.12.2-edit/minecraft` есть `packquests-autotest.json`, клиент заходит в мир `autotest` (создаёт его,
+     если нет: творческий, читы, тип мира в сценарии), выполняет шаги (команды в чат, `/tp` с углами камеры, ожидание,
+     открыть инвентарь, книгу квестов, JEI, произвольный GUI), делает скриншоты в `screenshots/autotest/<время>/`,
+     пишет `autotest-report.txt` (шаги, ошибки из лога, FPS) и выходит из игры; файл сценария переименовывается;
+   - запуск: `"%LOCALAPPDATA%\Programs\PrismLauncher\prismlauncher.exe" --launch 1.12.2-edit --world autotest`
+     (Prism поддерживает `--world` и `--offline`), ждать выхода javaw, смотреть скриншоты через Read;
+   - реальные миры не трогать; перед запуском проверить, что владелец не играет;
+   - первые сценарии: волна 1 (мобы, шрифт, медь, аметист), трубы ProjectRed с OptiFine (с переключением
+     `ofFastRender` в `optionsof.txt` между прогонами), Shattered Citadels (`/citadel spawn tower`, интерьер), кнопка «Квесты».
+   - Запасной путь: computer use в приложении Claude (Настройки → Система → Computer use).
 1. **Квесты (главная).** Большая линейка в стиле серверов McSkill HiTech: древо от старта до эндгейма по большим модам
    (IC2, Advanced Solar Panels, GraviSuite, Thermal, Mekanism, Ender IO, Immersive Engineering, AE2, Draconic, Tinkers,
    Forestry, BuildCraft и др.), отдельная кнопка.
