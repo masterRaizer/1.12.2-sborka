@@ -171,7 +171,8 @@
 | 163 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
 | 164 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
 | 165 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
-| 166 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `9e77cd31226fe0a7ed66ecf37185075fea608446` |
+| 166 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `e7ad3064db2b54ce4ff465ef546e28f10ef1e81c` |
+| 167 | `TinkersComplement-1.12.2-0.4.3.jar` | CurseForge: Tinkers' Complement (file 2843439), поставлен 22.11.2026 вместе с tinkersbackports | `fa890e49c131e8ff93d8a4e6de0a5476083df6c3` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
