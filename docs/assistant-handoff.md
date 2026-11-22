@@ -25,6 +25,8 @@
 - Долгие прогоны запускать в фоне. Каскадную генерацию считать так:
   `grep -o "\[FML\]: .* loaded a new chunk" console.log | sed 's/\[FML\]: //; s/ loaded a new chunk//' | sort | uniq -c`
 - `max-tick-time=-1` (watchdog выключен).
+- Очередь: перед правкой `mods`/`server.properties` создать `_server-1.12.2\LOCK.txt` (тред и время); если файл есть, ждать.
+  После прогона вернуть `level-name=world_taiga` и удалить LOCK.txt.
 
 ## Prism
 
@@ -92,8 +94,14 @@
 3. **Каскадная генерация** (1137 чанков): MrTJPCore (руды ProjectRed) 84, Quark 33, Dynamic Trees 24.
 4. **Shattered Citadels**: владелец проверяет в игре (`/citadel spawn tower|manor`, бой с магом, печати, библиотека).
    Вопрос агенту: летающая небесная цитадель (сейчас это башня с земли).
-5. **Крупные биомы**: владелец пробует настройки типа мира BoP (Biome Size Large, Land Scheme Continents);
-   если мало, RTG в отдельной копии сборки (проверить с Dynamic Trees).
+5. **Крупные биомы**: 22.11 сделаны карты биомов (генератор на тестовом сервере, 16×16 тыс. блоков, один сид):
+   BoP по умолчанию ~300×300 блоков на биом, Large+Continents ~600×600 (океан 41%), Huge+Continents ~1100×1100.
+   Тестовый мир `saves/BoP Large Continents test` в Prism (творческий, читы, сид 8040611399178049913), на сервере
+   `world_bop_large`. Ждём решения владельца (Large или Huge); RTG только если мало.
+   Важно для 11f/11z: в мире типа BIOMESOP Незер генерирует BoP (5 его биомов + ад, 655 настоящих чанков у 0,0),
+   биомов Unseen's там нет, в отличие от мира DEFAULT.
+   Инструмент карт: `F:\minecraft-mods\_toolsiomemap` (jar с командой `/biomemap` кладётся в mods сервера только на прогон,
+   `render.py`, `region_map.py`, `region_biomes.py`).
 6. UniDict: модуль EnderIO падает с NoSuchMethodError (рецепты UniDict для EnderIO не работают).
 7. **Tinkers' Backports, фазы 2–4** (см. `F:\minecraft-mods\tinkersbackports\docs\gap-list.md`): 2 инструменты
    (кинжал, дротик, vein hammer, war pick, боевой топор и катласс из 1.7.10: их текстуры уже лежат в jar Tinkers 1.12),
