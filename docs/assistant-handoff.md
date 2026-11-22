@@ -65,7 +65,7 @@
   `mods_client_only`). Настройки HiTech перенесены в `options.txt`/`optionsof.txt`, кроме дальности (12) и масштаба (4),
   копии `*.bak-graphics`. Бэкап `_saves-backup-before-graphics`. Автотест `packautotest/scenarios/graphics.json` PASS,
   FPS не просел. NEA не встраивается в наш MouseTweaks 2.10 (только предупреждение). Отчёт и таблица настроек:
-  `F:\minecraft-mods\_ref\graphics-menueport.md`. В packautotest добавлены шаги `hover`/`hoverSlot` и `gui: "modConfig:<modid>"`.
+  `F:\minecraft-mods\_ref\graphics-menu\report.md`. В packautotest добавлены шаги `hover`/`hoverSlot` и `gui: "modConfig:<modid>"`.
 
 ## Открытые задачи
 
