@@ -49,7 +49,7 @@
   `claude/brave-franklin-ttdlk9`, папка `dist/`). На сервере: все постройки, старый мир 1.6.0/1.6.1 открывается.
 
 - **Tinkers' Backports** (свой мод, отдельный jar, 22.11.2026): перенос всего из Tinkers 1.7.10 и 3.x (3.12.1 для
-  1.20.1, последняя). Код `F:\minecraft-mods	inkersbackports` (локальный git, на GitHub ещё нет), сверка
+  1.20.1, последняя). Код `F:\minecraft-mods\tinkersbackports` (локальный git, на GitHub ещё нет), сверка
   `docs/gap-list.md`, фаза 1 `docs/phase1-design.md`. Фаза 1 стоит в Prism и на тестовом сервере: 8 сплавов 3.x
   (rose gold, slimesteel, amethyst bronze, hepatizon, queen's slime, cinderslime, pewter, nicrosil), 5 неметаллов
   (кости, хорус, seared stone), 18 модификаторов, жидкости кварц/магма/ихор. Сервер: всё загружено, TPS 20.
@@ -94,7 +94,7 @@
 5. **Крупные биомы**: владелец пробует настройки типа мира BoP (Biome Size Large, Land Scheme Continents);
    если мало, RTG в отдельной копии сборки (проверить с Dynamic Trees).
 6. UniDict: модуль EnderIO падает с NoSuchMethodError (рецепты UniDict для EnderIO не работают).
-7. **Tinkers' Backports, фазы 2–4** (см. `F:\minecraft-mods	inkersbackports\docs\gap-list.md`): 2 инструменты
+7. **Tinkers' Backports, фазы 2–4** (см. `F:\minecraft-mods\tinkersbackports\docs\gap-list.md`): 2 инструменты
    (кинжал, дротик, vein hammer, war pick, боевой топор и катласс из 1.7.10: их текстуры уже лежат в jar Tinkers 1.12),
    сердца 1.7.10, слизистая броня с элитрами; 3 плавильные блоки (сначала поставить Tinkers' Complement 0.4.3,
    скачивание спрошено у владельца 22.11); 4 деревья, острова и мобы из слизи. Tinkers' Antique 2.13.0.209
