@@ -1,6 +1,6 @@
 # Список модов
 
-Всего jar-файлов: **165**. Minecraft 1.12.2, Forge 14.23.5.2860.
+Всего jar-файлов: **168**. Minecraft 1.12.2, Forge 14.23.5.2860.
 
 Сами jar-файлы в репозиторий не выложены: многие моды запрещают перезалив. Качайте по ссылкам (Modrinth) или с CurseForge по названию. SHA-1 нужен, чтобы проверить, что версия та же.
 
@@ -9,7 +9,7 @@
 | 1 | `!mixinbooter-10.7.jar` | [MixinBooter](https://modrinth.com/mod/mixinbooter/version/PZYBy1vc) | `3fdfffe4fd446461ea9c3cb044484588997b9dbc` |
 | 2 | `AIImprovements-1.12-0.0.1b3.jar` | [AI Improvements: Performance Tuning](https://modrinth.com/mod/ai-improvements/version/kOyZhvg3) | `ef4b64cd4fc10522ead1f659b81e471af455c3fe` |
 | 3 | `Advanced+Machines-61.0.1.jar` | CurseForge / архив (нет на Modrinth) | `a7fb59a865bcebac8f1a0ae45bf58119e00793af` |
-| 4 | `Advanced+Solar+Panels-4.3.0.jar` | CurseForge / архив (нет на Modrinth) | `6688309faf8dc5b6c95111241c4c61e22adc426d` |
+| 4 | `Advanced+Solar+Panels-4.3.0-ic2hitech.jar` | CurseForge 4.3.0, пропатчен под IC2 2.8.221 (`tools/ic2_hitech/patch_invslot.py`) | `\1c28c6bcf392c860dc983faeebf46685e1e7fd79` |
 | 5 | `AmbientSounds_v3.0.9_mc1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `d860c75c5393596d7e83b0d7761468ad75cd1b73` |
 | 6 | `Apotheosis-1.12.2-1.12.5.jar` | CurseForge / архив (нет на Modrinth) | `71b7f07f7608019209cf8293aac806f3a1599799` |
 | 7 | `AppleSkin-mc1.12-1.0.9.jar` | CurseForge / архив (нет на Modrinth) | `23162a97cab0adb4be2fc6d3937c613929d1d5c7` |
@@ -138,7 +138,7 @@
 | 130 | `globalxp-1.12.2-v1.4.10.jar` | [Global XP](https://modrinth.com/mod/global-xp/version/rENQ2BpG) | `d8f188bc98bdc369cb168a78c064398485a0834b` |
 | 131 | `gravitationsuite-3.1.1.jar` | CurseForge / архив (нет на Modrinth) | `1040529ce75fc685afe2e1fb407f516f02245c55` |
 | 132 | `hammerx_1.12_1.1.3.jar` | CurseForge / архив (нет на Modrinth) | `984444d6ef9f32932ffceabd588985bec4abf2f5` |
-| 133 | `industrialcraft-2-2.8.170-ex112.jar` | CurseForge / архив (нет на Modrinth) | `2f5597fc13866f8e88fbb7359046511cac2f5371` |
+| 133 | `industrialcraft-2-2.8.221-ex112-hitech-j8.jar` | IC2 сервера McSkill HiTech 1.12.2 (очки-радар, IVSU/UVSU), 44 класса переведены на Java 8 (`tools/ic2_hitech/downgrade.py`) | `\07830092d405f093bfe2cda84ead798f9ba0fe23` |
 | 134 | `infinitetrading_1.12.2-1.4.jar` | CurseForge / архив (нет на Modrinth) | `5e566afb129dfdeb26f56a9bcd3182254ac2ca9e` |
 | 135 | `inventorysorter_1.12.2_1.12.049.jar` | CurseForge / архив (нет на Modrinth) | `d05f559c487f900416adf62a075c771c356aec14` |
 | 136 | `ironchest_1.12.2_7.0.67.844.jar` | CurseForge / архив (нет на Modrinth) | `35759dfd73a40543f86492e97b27c2d1b189c7a9` |
@@ -176,6 +176,9 @@
 | 168 | `LegendaryTooltips-1.12.2-1.1.11.jar` | [Legendary Tooltips](https://modrinth.com/mod/legendary-tooltips/version/8rjxinu8), только клиент, поставлен 22.11.2026 (рамки подсказок как на MCSkill HiTech) | `f174a9ccf33df0bc1594713ef40dc8c0fce32205` |
 | 169 | `neverenoughanimations-1.0.6.jar` | NeverEnoughAnimations (CleanroomMC), jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `d5851c65d8bd5877e5af5438616abc5f32c75655` |
 | 170 | `scalingguis-1.12.2-1.0.3.0.jar` | ScalingGUIs (Spazley), CurseForge; jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `f98f8e33f539a7086bd6f6127211a506e3d7352b` |
+| 171 | `ResourcesRadar-1.0.1.jar` | клиент McSkill HiTech (форк XRay-Mod, окно выбора руд); серверную часть даёт hitechcompat | `\e4aff10e1d9ed98600931cf2cfe772e8d79870a8` |
+| 172 | `advmachinespatch-1.0.jar` | Advanced Machines Patcher (Su5eD), нужен для IC2 2.8.2xx | `\7d0172b0498e3eac89c4561bab8ce2c8ba33d32b` |
+| 173 | `hitechcompat-0.1.0.jar` | свой мод `F:\minecraft-mods\hitechcompat`: сервер радара, детали и рецепты очков HiTech | `\49a3db6499e931967e9e1bbfcdbb16e9700619e0` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
