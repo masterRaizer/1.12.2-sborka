@@ -100,7 +100,7 @@
    `world_bop_large`. Ждём решения владельца (Large или Huge); RTG только если мало.
    Важно для 11f/11z: в мире типа BIOMESOP Незер генерирует BoP (5 его биомов + ад, 655 настоящих чанков у 0,0),
    биомов Unseen's там нет, в отличие от мира DEFAULT.
-   Инструмент карт: `F:\minecraft-mods\_toolsiomemap` (jar с командой `/biomemap` кладётся в mods сервера только на прогон,
+   Инструмент карт: `F:\minecraft-mods\_tools\biomemap` (jar с командой `/biomemap` кладётся в mods сервера только на прогон,
    `render.py`, `region_map.py`, `region_biomes.py`).
 6. UniDict: модуль EnderIO падает с NoSuchMethodError (рецепты UniDict для EnderIO не работают).
 7. **Tinkers' Backports, фазы 2–4** (см. `F:\minecraft-mods\tinkersbackports\docs\gap-list.md`): 2 инструменты
