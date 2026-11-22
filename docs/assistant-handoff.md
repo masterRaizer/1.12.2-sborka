@@ -51,8 +51,9 @@
      `JAVA_HOME=%USERPROFILE%\.gradle\jdks\eclipse_adoptium-25-amd64-windows.2 ./gradlew build`):
      кнопка «Квесты» слева от инвентаря (выживание и творческий) и в меню паузы, открывает BetterQuesting через
      рефлексию; команда `/packquests dump` (в фоне, с таймаутами на предмет) пишет `packquests-dump/items.tsv`,
-     `entities.tsv`, `fluids.tsv`, `ores.tsv` в папку сервера. Последняя сборка с исправлением (`getTabLabel` был
-     только клиентский) лежит в `build\libs`; проверить, что дамп записался.
+     `entities.tsv`, `fluids.tsv`, `ores.tsv` в папку сервера. Дамп сделан 22.11 12:35 в `F:\minecraft-mods\_server-1.12.2\packquests-dump`:
+     34623 стака предметов, 280 сущностей, 236 жидкостей, 1324 имени словаря руд. Мод PackQuests лежит в mods
+     тестового сервера, в Prism ещё НЕ поставлен.
    - BetterQuesting 3.5.312: квесты по умолчанию в `config/betterquesting/DefaultQuests.json` (формат как в
      `config/betterquesting/citadels_questline.json`, ключи с типами `name:8`). Новый мир берёт их сам, в старом
      `/bq_admin default load`. Линию Shattered Citadels (`citadels_questline.json`) включить отдельной главой со
