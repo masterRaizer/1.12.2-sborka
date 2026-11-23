@@ -171,7 +171,7 @@
 | 163 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
 | 164 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
 | 165 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
-| 166 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `bd635c4c04a96b3285c8566ac6e12a0e8d4b9417` |
+| 166 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `e69e495350cbadc7a22982ed246530b5caf9cafd` |
 | 167 | `TinkersComplement-1.12.2-0.4.3.jar` | CurseForge: Tinkers' Complement (file 2843439), поставлен 22.11.2026 вместе с tinkersbackports | `fa890e49c131e8ff93d8a4e6de0a5476083df6c3` |
 | 168 | `LegendaryTooltips-1.12.2-1.1.11.jar` | [Legendary Tooltips](https://modrinth.com/mod/legendary-tooltips/version/8rjxinu8), только клиент, поставлен 22.11.2026 (рамки подсказок как на MCSkill HiTech) | `f174a9ccf33df0bc1594713ef40dc8c0fce32205` |
 | 169 | `neverenoughanimations-1.0.6.jar` | NeverEnoughAnimations (CleanroomMC), jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `d5851c65d8bd5877e5af5438616abc5f32c75655` |
