@@ -163,14 +163,115 @@ def downgrade(b, report):
                 nd = d[:d.index(')') + 1] + 'Ljava/nio/Buffer;'
                 cf.cp.e[i] = (10, (e[1][0], cf.nat(nm, nd)))
                 report.append('%s: %s.%s%s -> %s (check result is not used as %s)' % (cname, owner, nm, d, nd, owner))
+    if SHIM:
+        apply_shims(cf, cname, bsms, is_iface, report)
     cf.major, cf.minor = 52, 0
     return cf.to_bytes()
 
 
-def main(src, dst):
+SHIM = None  # internal name of the injected shim class, e.g. jdgshim/htc_reactors/Shim
+OBJ = 'Ljava/lang/Object;'
+
+
+def shim_target(owner, name, desc, op):
+    """(shim method, shim desc) for a Java 9+ library call, or None."""
+    args, ret = parse_desc(desc)
+    if op == 0xb8 and owner in ('java/util/List', 'java/util/Set', 'java/util/Map'):
+        kind = {'java/util/List': 'list', 'java/util/Set': 'set', 'java/util/Map': 'map'}[owner]
+        if name == 'of':
+            return kind + 'Of', desc
+        if name == 'copyOf' and kind == 'list':
+            return 'copyOfList', '(Ljava/util/Collection;)Ljava/util/List;'
+    inst = {('java/util/stream/Stream', 'toList'): 'toList', ('java/util/Optional', 'isEmpty'): 'optIsEmpty',
+            ('java/util/Optional', 'orElseThrow'): 'optOrElseThrow', ('java/lang/String', 'isBlank'): 'strIsBlank',
+            ('java/lang/String', 'strip'): 'strStrip', ('java/lang/String', 'repeat'): 'strRepeat'}
+    if op in (0xb6, 0xb9):
+        if (owner, name) in inst and not (name == 'orElseThrow' and args):
+            return inst[(owner, name)], '(L%s;%s)%s' % (owner, ''.join(args), ret)
+        if owner in ('java/util/List', 'java/util/ArrayList', 'java/util/SequencedCollection') and \
+                name in ('addFirst', 'addLast', 'getFirst', 'getLast', 'removeFirst', 'removeLast'):
+            r = 'V' if name.startswith('add') else OBJ
+            return name, '(Ljava/util/List;%s)%s' % (''.join(OBJ for _ in args), r)
+    return None
+
+
+def apply_shims(cf, cname, bsms, is_iface, report):
+    # records: Record -> Object, MatchException -> RuntimeException
+    for i, e in enumerate(cf.cp.e):
+        if e and e[0] == 7:
+            n = cf.cp.utf(e[1])
+            if n == 'java/lang/Record':
+                cf.cp.e[i] = (7, cf.utf8('java/lang/Object'))
+            elif n == 'java/lang/MatchException':
+                cf.cp.e[i] = (7, cf.utf8('java/lang/RuntimeException'))
+    cf.attrs = [a for a in cf.attrs if cf.cp.utf(a[0]) != 'Record']
+    n_fix = 0
+    for m in cf.methods:
+        for a in m[3]:
+            if cf.cp.utf(a[0]) != 'Code':
+                continue
+            d = a[1]
+            clen = struct.unpack_from('>I', d, 4)[0]
+            code = d[8:8 + clen]
+            for pos, op, ln in instructions(bytes(code)):
+                if op == 0xba:
+                    idx = struct.unpack_from('>H', code, pos + 1)[0]
+                    tag, (bsm_i, nat_i) = cf.cp.e[idx]
+                    mh = bsms[bsm_i][0]
+                    owner = cf.cp.ref(cf.cp.e[mh][1][1])[0]
+                    if owner == 'java/lang/runtime/ObjectMethods':
+                        iname, idesc = cf.cp.nat(nat_i)
+                        target = {'toString': ('recordToString', '(Ljava/lang/Object;)Ljava/lang/String;'),
+                                  'hashCode': ('recordHashCode', '(Ljava/lang/Object;)I'),
+                                  'equals': ('recordEquals', '(Ljava/lang/Object;Ljava/lang/Object;)Z')}[iname]
+                        code[pos:pos + 5] = b'\xb8' + struct.pack('>H', cf.mref(SHIM, *target)) + b'\x00\x00'
+                        n_fix += 1
+                    continue
+                if op not in (0xb6, 0xb8, 0xb9):
+                    continue
+                idx = struct.unpack_from('>H', code, pos + 1)[0]
+                e = cf.cp.e[idx]
+                if not e or e[0] not in (10, 11):
+                    continue
+                owner, name, desc = cf.cp.ref(idx)
+                t = shim_target(owner, name, desc, op)
+                if not t:
+                    continue
+                new = b'\xb8' + struct.pack('>H', cf.mref(SHIM, t[0], t[1]))
+                code[pos:pos + ln] = new + b'\x00' * (ln - 3)
+                n_fix += 1
+            d[8:8 + clen] = code
+    if n_fix:
+        report.append('%s: %d Java 9+ calls/record methods routed to %s' % (cname, n_fix, SHIM))
+
+
+def build_shim(pkg):
+    """Compile shim/Shim.java.tmpl with JDK 8 into package pkg; returns class bytes."""
+    import subprocess, tempfile, shutil
+    here = os.path.dirname(os.path.abspath(__file__))
+    tmpl = open(os.path.join(here, 'shim', 'Shim.java.tmpl')).read().replace('PKG', pkg.replace('/', '.'))
+    work = tempfile.mkdtemp()
+    try:
+        src = os.path.join(work, 'Shim.java')
+        open(src, 'w').write(tmpl)
+        javac = os.path.join(os.environ['USERPROFILE'], '.gradle', 'jdks', 'azul_systems__inc_-8-amd64-windows.2', 'bin', 'javac')
+        subprocess.check_call([javac, '-nowarn', '-Xlint:none', '-d', work, src])
+        return open(os.path.join(work, *pkg.split('/'), 'Shim.class'), 'rb').read()
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+
+
+def main(src, dst, shim_pkg=None):
+    global SHIM
     report = []
     zin = zipfile.ZipFile(src)
+    shim_bytes = None
+    if shim_pkg:
+        SHIM = shim_pkg + '/Shim'
+        shim_bytes = build_shim(shim_pkg)
     with zipfile.ZipFile(dst, 'w', zipfile.ZIP_DEFLATED) as zout:
+        if shim_bytes:
+            zout.writestr(SHIM + '.class', shim_bytes)
         for info in zin.infolist():
             data = zin.read(info.filename)
             if info.filename.endswith('.class') and not info.filename.startswith('META-INF/') and data[:4] == b'\xca\xfe\xba\xbe' \
@@ -182,4 +283,4 @@ def main(src, dst):
 
 
 if __name__ == '__main__':
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)

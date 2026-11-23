@@ -1,6 +1,6 @@
 # Список модов
 
-Всего jar-файлов: **168**. Minecraft 1.12.2, Forge 14.23.5.2860.
+Всего jar-файлов: **198**. Minecraft 1.12.2, Forge 14.23.5.2860.
 
 Сами jar-файлы в репозиторий не выложены: многие моды запрещают перезалив. Качайте по ссылкам (Modrinth) или с CurseForge по названию. SHA-1 нужен, чтобы проверить, что версия та же.
 
@@ -109,7 +109,7 @@
 | 101 | `XaerosWorldMap_1.5.2_Forge_1.12.jar` | CurseForge / архив (нет на Modrinth) | `ab199cf3b46bd0e552eeb60d41dc61979de7427d` |
 | 102 | `Xaeros_Minimap_1.19.4_Forge_1.12.jar` | CurseForge / архив (нет на Modrinth) | `4edbe0fce7731cc8295457ed76a46027c6eec357` |
 | 103 | `YungsLaw-1.12.2-1.0.4.jar` | CurseForge / архив (нет на Modrinth) | `6538598da3c76de971d07cdcca270894b6e84180` |
-| 104 | `appliedenergistics2_rv6_stable_7.jar` | CurseForge / архив (нет на Modrinth) | `e5c3c11eafc5daf73652a2dabe855e3759caa8b5` |
+| 104 | `ae2-uel-v0.56.7.jar` | AE2 Unofficial Extended Life (как на HiTech, нужен их AE2-аддонам) | `e657970ce6a893a49d4949e16537411feffc0285` |
 | 105 | `bettercaves-1.12.2-2.0.4.jar` | CurseForge / архив (нет на Modrinth) | `1924c9881c84373c4f887ad87b1089466b291d3f` |
 | 106 | `biolib-1.1.3.jar` | CurseForge / архив (нет на Modrinth) | `c9de632d1911104c2cbe3e21cec4bb5a2ea563d3` |
 | 107 | `bqforestry-2.1.0.jar` | CurseForge / архив (нет на Modrinth) | `2f117615f63a74437dd9bb55f0ae338d7a101f91` |
@@ -179,6 +179,36 @@
 | 171 | `ResourcesRadar-1.0.1.jar` | клиент McSkill HiTech (форк XRay-Mod, окно выбора руд); серверную часть даёт hitechcompat | `e4aff10e1d9ed98600931cf2cfe772e8d79870a8` |
 | 172 | `advmachinespatch-1.0.jar` | Advanced Machines Patcher (Su5eD), нужен для IC2 2.8.2xx | `7d0172b0498e3eac89c4561bab8ce2c8ba33d32b` |
 | 173 | `hitechcompat-0.1.0.jar` | свой мод `F:\minecraft-mods\hitechcompat`: сервер радара, детали и рецепты очков HiTech | `49a3db6499e931967e9e1bbfcdbb16e9700619e0` |
+| 174 | `!configanytime-3.0.jar` | Modrinth (CleanroomMC), нужен ZenUtils | `b6d8a10219d3802e04de6b1e815a5853e50adbcc` |
+| 175 | `AE2CT-Legacy-0.1.1-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `a889ae5e8d2d6705121d341acf153fff71a3a75c` |
+| 176 | `MixedMod-1.1.5-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `7874c56912c1703c1f980e91c731295ece7ce445` |
+| 177 | `ModularMachinery-CE-2.1.4-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `90f7cd07e9a934a667d361b1bb0fe21d2e1d78ca` |
+| 178 | `NovaEngineering-Core-1.21.1-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `be0bce7d4957221bf031726ac99e66e045e8f162` |
+| 179 | `SauriaLib3-3.2.1-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `9392a830e98857406598e426e791f98066c5ba47` |
+| 180 | `htc_reactors-1.0.0-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `d2bdad8b31af5f316517a6c6cb85b57018d71a04` |
+| 181 | `ContentTweaker-1.12.2-4.10.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `421dcb21ddd62a5f4ae61e72bf2a65e8857835a2` |
+| 182 | `CraftTweaker2-1.12-4.1.20.693.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `f3c4dbcb4ca9d4d2e0905b644e9069b1ff5a9f68` |
+| 183 | `ExtendedAE-1.12-0.0.1.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `f837244c03a3279c98e4ed71ab1affe9b1fed59f` |
+| 184 | `JAOPCA-1.12.2-2.2.8.106.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `35a86878e5e482f7a90950a1d6e194987a02830c` |
+| 185 | `MTLib-3.0.7.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `7d2b9e97518dca1e9326fd347ba1eb93dec35999` |
+| 186 | `The last life of Darkness-1.0.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `d5168bc91200ea63c2b4aae2dba0c1cde5717932` |
+| 187 | `TheOneProbe-CE-1.12-1.3.2.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `737e9a5660ee5c53a952ea3917cdf4f29d856ea2` |
+| 188 | `WrapUp-1.12-1.1.3.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `29f89705011794531150e5e00a73d62cc0134888` |
+| 189 | `ae2fc-2.7.10-unofficial.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `f8fb510235d7112305898e60ae2d953fa9e1158e` |
+| 190 | `ae2stuff-1.12.2-0.9.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `496e74477ea7070f77eba1190d36c09bf35492f1` |
+| 191 | `base-1.12.2-3.14.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `4fbf3bae670f626028e29b57622b0ee98a8ad4db` |
+| 192 | `bdlib-1.14.4.1-mc1.12.2.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `6cb8cb1edc2897cf30f5071b04c29a2482d2b109` |
+| 193 | `binnie-mods-1.12.2-2.5.1.203.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `0d18b1080a7dd035d6e7da6a43bb5d69c3d4591b` |
+| 194 | `crafttweakerutils-0.7.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `8e766e3ae36bf0d3f8d28d0b2309c9a46ddc9a69` |
+| 195 | `discord-game-sdk4j-0.5.5.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `3cc8090a52b1794863d8b6dde6838dbaff47d347` |
+| 196 | `gendustry-1.6.5.8-mc1.12.2.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `fdb69e45f0e54c793b9e52bb49ecedc9dfce13a1` |
+| 197 | `ic2-tweaker-0.2.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `e04ec149b385ef3c03e9bcb9a43eb77f317900bd` |
+| 198 | `lazy-ae2-1.12.2-1.1.26.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `e991dd47ab4a481ce1f20a9b178578e24e54a8c9` |
+| 199 | `libnine-1.12.2-1.2.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `e2e3627d400b45a81156473572423c7c1cea0e3c` |
+| 200 | `modtweaker-4.0.19.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `315303bc32c40f9e7dbf366a0df3d0fe26f36db1` |
+| 201 | `nae2-voidstudio.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `a573d7cea85e427844674a83edcfe174bd7ad025` |
+| 202 | `requious-0.13.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `7e81ef33d2ae2a6aa2c16f6fc76b33f394dd9920` |
+| 203 | `zenutils-1.20.5.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `2213c1b001630d21c0eaf9770e5c859c016a076a` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
