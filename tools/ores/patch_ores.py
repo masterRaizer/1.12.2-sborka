@@ -4,6 +4,7 @@
 Каждый изменённый файл копируется рядом как <имя>.bak-ores (если копии ещё нет).
 Новые файлы CoFH World 05_pack_*.json копируются из папки cofh рядом со скриптом.
 Откат: rollback.bat (возвращает .bak-ores и удаляет 05_pack_*.json).
+23.11: исправлен Gobber (worldgenGobber=false, генерация своя, CoFH-запись выключена), см. report.md.
 """
 import json
 import os
@@ -214,7 +215,13 @@ def main():
     except FileNotFoundError as e:
         print("  нет файла, пропуск:", e.filename)
     try:
-        forge_keys(cfg, "gobber.cfg", {"B:worldgenGobber": "true"})   # true = ВЫКЛЮЧИТЬ руду Gobber (так в моде)
+        # Gobber генерирует руду сам (y 20-30), запись CoFH 05_pack_gobber_ores.json выключена (enabled=false).
+        # worldgenGobber НЕЛЬЗЯ ставить true: тогда Gobber не регистрирует предмет gb:gobber_ore
+        # (RegistryHandler.registerItems), и в старых мирах руда пропадает из сундуков и инвентарей.
+        # То же с worldgenGlucky / worldgenGlobette / worldgenNetherGlobette: держать false.
+        forge_keys(cfg, "gobber.cfg", {"B:worldgenGobber": "false",
+                                       "I:worldgenOreSize": "10",     # максимум мода: жила 2-11
+                                       "I:worldgenOreChance": "6"})   # максимум мода: 6 жил на чанк
     except FileNotFoundError as e:
         print("  нет файла, пропуск:", e.filename)
     try:

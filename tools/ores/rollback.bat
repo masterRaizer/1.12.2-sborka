@@ -31,5 +31,8 @@ if exist "%CFG%\cofh\world\05_pack_forestry_ores.json" ( del "%CFG%\cofh\world\0
 if exist "%CFG%\cofh\world\05_pack_projectred_ores.json" ( del "%CFG%\cofh\world\05_pack_projectred_ores.json" && echo   удалил cofh/world/05_pack_projectred_ores.json )
 if exist "%CFG%\cofh\world\05_pack_draconic_ores.json" ( del "%CFG%\cofh\world\05_pack_draconic_ores.json" && echo   удалил cofh/world/05_pack_draconic_ores.json )
 if exist "%CFG%\cofh\world\05_pack_gobber_ores.json" ( del "%CFG%\cofh\world\05_pack_gobber_ores.json" && echo   удалил cofh/world/05_pack_gobber_ores.json )
+rem Копии фикса Gobber (23.11): gobber.cfg уже вернулся из .bak-ores (оригинал), копии больше не нужны.
+if exist "%CFG%\gobber.cfg.bak-gobberfix" ( del "%CFG%\gobber.cfg.bak-gobberfix" && echo   удалил gobber.cfg.bak-gobberfix )
+if exist "%CFG%\cofh\world\05_pack_gobber_ores.json.bak-gobberfix" ( del "%CFG%\cofh\world\05_pack_gobber_ores.json.bak-gobberfix" && echo   удалил cofh/world/05_pack_gobber_ores.json.bak-gobberfix )
 echo Готово.
 pause

@@ -2,7 +2,7 @@
 	"dependencies": "gb",
 	"populate": {
 		"pack_gobber": {
-			"enabled": "true",
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": {
