@@ -1,6 +1,6 @@
 # Передача дел: ассистент по сборке 1.12.2
 
-Состояние на 22.11.2026. Этот файл читает каждый новый тред проекта «ассистент по сборке 1.12.2».
+Состояние на 23.11.2026. Этот файл читает каждый новый тред проекта «ассистент по сборке 1.12.2».
 
 ## Роль ассистента
 
@@ -32,7 +32,7 @@
 
 - Рабочий инстанс `%APPDATA%\PrismLauncher\instances\1.12.2-edit`. Оригинальный `1.12.2(1)` не трогать.
 - Перед заменой jar: игра закрыта (`tasklist | grep javaw`), бэкап `saves` в `F:\minecraft-mods\_saves-backup-before-<что>`.
-- Убранные jar: `removed_mods\<номер>_<причина>` (сейчас 1–10, `7_replaced_by_update` для старых версий).
+- Убранные jar: `removed_mods\<номер>_<причина>` (сейчас 1–12, `7_replaced_by_update` для старых версий, `12_futuremc_absorbed` — Future MC).
 
 ## Что сделано (кратко)
 
@@ -44,7 +44,29 @@
   отчёт `docs/stages/M2.md` (коммит 07f534a). Сервер: новый мир и копия world_taiga (15 752 блока заменены, реестры
   level.dat до/после совпадают), TPS 20, каскада от мода нет; автотесты 11b-stations и 11c-mobs-plants PASS.
   609 предупреждений «Object did not get ID it asked for» при первом заходе в старый мир — норма (новые объекты).
-  Ветки stage/11b–11h и worktree wt\11b–11h удалены. Этап 11z (futuremc) запущен 23.11.
+  Ветки stage/11b–11h и worktree wt\11b–11h удалены.
+- **Future MC убран из сборки (этап 11z, PR #14 слит 23.11.2026, коммит 96fd917; установлен этапом M 23.11).**
+  Всё, что регистрировал Future MC, переходит на наши версии; `DataFixes.CURRENT=5`, старые числовые ID пишутся в
+  `data/modernbackports_removed_mods.dat` мира и переписываются при первой загрузке чанков. Отчёт `docs/stages/11z.md`.
+  Jar `modernbackports-0.0.1.jar` SHA-1 `d11b1fe7de5883a7a57255c173652c881fb005d9` (собран из main с `--no-daemon`;
+  классы байт в байт как в jar 11z `34b8650e`, отличается только строка `ForceLoadAsMod` в манифесте, как у M2), копия
+  `F:\minecraft-mods\_M-11z-jar`. Стоит в 1.12.2-edit и на сервере. В 1.12.2-edit: `Future-MC-0.2.21.jar` и
+  `config\futuremc` → `removed_mods\12_futuremc_absorbed`, старый jar → `7_replaced_by_update\modernbackports-0.0.1-before-11z.jar`,
+  заменены 4 конфига (apotheosis/enchantments.cfg — наши трезубцевые чары Max Level 50; veinminer/tools-and-blocks.json — без
+  `futuremc`; Unseen's blocks_items_config.cfg — `modernbackports:blue_ice`; Unseen's world_config.cfg — «Ancient Debris Spawn
+  Chances»=0, иначе Unseen's без Future MC удвоит обломки). Бэкап saves `_saves-backup-before-11z-futuremc`.
+  На сервере Future MC и старый jar в `mods_client_only` (`modernbackports-0.0.1-before-11z.jar`), `config\futuremc` в
+  `_server-1.12.2\removed_11z\config`. Проверка: копия world_taiga — Forge ничего не спросил («missing»/«Unidentified» 0),
+  321 чанк переписан, 1277 новых чанков, TPS 20, каскада от мода нет (MrTJPCore 121, Quark 50, Dynamic Trees 24 — старые);
+  автотесты в клоне `1.12.2-test-M`: 11z-before → 11z-after (бочка с алмазами и сотами цела, блоки и мобы на месте), 11b, 11c PASS.
+  11c повторён после установки с `--refresh` из 1.12.2-edit (в сценарии 11c исправлен порядок: сначала ждать чанки, потом
+  ставить улей и цветы, иначе setblock попадал в незагруженные чанки). Скриншоты `F:\minecraft-mods\_M-11z-screens`.
+  **Для треда квестов:** `ftbquests/normal/chapters/*.snbt` и достижения/`quests/hitech.json` в packquests ссылаются на
+  `futuremc:*` — перегенерировать с `modernbackports:*` (те же имена, кроме `banner_pattern` → `flower_banner_pattern`,
+  `soul_fire_torch` → `soul_torch`, `soul_fire_lantern` → `soul_lantern`), snbt руками не править.
+  **Для Shattered Citadels:** палитры/мебель/лут берут `futuremc:*` с запасным вариантом — добавить имена `modernbackports:*` первыми.
+  Не переносятся из Future MC: «New Villager Gui» (окно торговли 1.14) и «Game Mode Switcher» (F3+F4) — кандидаты на этап интерфейса.
+  Unseen's Nether и MoreBlocks ещё стоят (следующие запуски 11z).
 - 11c (пчёлы, ульи, мёд, ягоды, бамбук, панда, василёк/ландыш/роза визера, рагу): черновой PR
   https://github.com/masterRaizer/modernbackports/pull/7 (ветка `stage/11c`), слит этапом M 23.11. Тест переноса миров 14/14,
   генерация без каскада (в т. ч. с Future MC и Dynamic Trees), отчёт `docs/stages/11c.md` со списком «проверить в игре».
