@@ -1,0 +1,25 @@
+{
+  "armormodifier": "reinforced_armor",
+  "text": [
+    {
+      "text": "Укрепляющая пластина делает броню прочнее"
+    },
+    {
+      "text": "\n"
+    },
+    {
+      "text": "и помогает ей дольше служить."
+    }
+  ],
+  "effects": [
+    "Даёт шанс не потратить прочность",
+    "Складывается с предыдущими уровнями укрепления",
+    "Несколько уровней"
+  ],
+  "demoArmor": [
+    "conarm:helmet",
+    "conarm:chestplate",
+    "conarm:leggings",
+    "conarm:boots"
+  ]
+}

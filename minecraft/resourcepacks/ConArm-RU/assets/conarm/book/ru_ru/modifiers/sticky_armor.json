@@ -1,0 +1,24 @@
+{
+  "armormodifier": "sticky_armor",
+  "text": [
+    {
+      "text": "Паутина на броне выглядит некрасиво, зато"
+    },
+    {
+      "text": "\n"
+    },
+    {
+      "text": "опутывает каждого, кто к вам прикоснётся."
+    }
+  ],
+  "effects": [
+    "Замедляет врагов, которые бьют вас вблизи",
+    "Одноразово"
+  ],
+  "demoArmor": [
+    "conarm:helmet",
+    "conarm:chestplate",
+    "conarm:leggings",
+    "conarm:boots"
+  ]
+}
