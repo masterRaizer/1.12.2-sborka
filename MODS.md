@@ -1,6 +1,6 @@
 # Список модов
 
-Всего jar-файлов: **202**. Minecraft 1.12.2, Forge 14.23.5.2860.
+Всего jar-файлов: **208** (и ещё 1 в подпапке `mods/1.12.2/`). Minecraft 1.12.2, Forge 14.23.5.2860.
 
 Сами jar-файлы в репозиторий не выложены: многие моды запрещают перезалив. Качайте по ссылкам (Modrinth) или с CurseForge по названию. SHA-1 нужен, чтобы проверить, что версия та же.
 
@@ -208,6 +208,12 @@
 | 200 | `nae2-voidstudio.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `a573d7cea85e427844674a83edcfe174bd7ad025` |
 | 201 | `requious-0.13.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `7e81ef33d2ae2a6aa2c16f6fc76b33f394dd9920` |
 | 202 | `zenutils-1.20.5.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `2213c1b001630d21c0eaf9770e5c859c016a076a` |
+| 203 | `FTBLib-5.4.7.2.jar` | CurseForge / архив (нет на Modrinth): библиотека для FTB Quests, поставлен 22.11.2026 | `7c20cd223bc2334edf153e074f35acdbcab3c976` |
+| 204 | `FTBQuests-1202.9.0.15.jar` | CurseForge / архив (нет на Modrinth): книга квестов, на ней линейка PackQuests (1207 квестов), 22.11.2026 | `03413411b820e0fb91f36013aa5954dde3bc85e9` |
+| 205 | `ItemFilters-1.0.4.2.jar` | CurseForge / архив (нет на Modrinth): нужен FTB Quests (фильтры предметов в задачах), 22.11.2026 | `6b6560aea35c6e0e8a550ea7044501412b0fb335` |
+| 206 | `packautotest-0.1.0.jar` | свой мод `F:\minecraft-mods\packautotest`: автотест клиента (срабатывает только при файле `packquests-autotest.json`, иначе ничего не делает), 22.11.2026 | `4c4fd79a9295930caa930764f2e70e2912dc4177` |
+| 207 | `packquests-0.3.1.jar` | свой мод `F:\minecraft-mods\packquests`: кнопка «Квесты» (пауза и инвентарь), квестовая линейка и 780 достижений (клавиша L), 23.11.2026 | `75939b295a347fafbd3e9b8ac24085c9bdd7ad79` |
+| 208 | `shatteredcitadels-1.9.0.jar` | Shattered Citadels (другой агент): https://github.com/masterRaizer/Mods-Forge-1.12.2-, ветка `claude/brave-franklin-ttdlk9`, `dist/`; цитадели, храм в джунглях, храмы в мирах BoP, 23.11.2026 | `9e7aaecf32f9c49e825f13c0bc82ed0db8e2748a` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
