@@ -218,7 +218,8 @@ def main():
     except FileNotFoundError as e:
         print("  нет файла, пропуск:", e.filename)
     try:
-        forge_keys(cfg, "modernbackports/02a.cfg", {"B:copperOre": "false"})
+        forge_keys(cfg, "modernbackports/02a.cfg", {"B:copperOre": "true", "I:copperVeinSize": "18",
+                                                    "I:copperVeinsPerChunk": "6"})   # медь 1.17: 1-96, 6 жил, ~26 блоков
     except FileNotFoundError as e:
         print("  нет файла, пропуск:", e.filename)
     print("изменено файлов:", len(CHANGED))
