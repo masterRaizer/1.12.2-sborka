@@ -57,7 +57,8 @@
   Chances»=0, иначе Unseen's без Future MC удвоит обломки). Бэкап saves `_saves-backup-before-11z-futuremc`.
   На сервере Future MC и старый jar в `mods_client_only` (`modernbackports-0.0.1-before-11z.jar`), `config\futuremc` в
   `_server-1.12.2\removed_11z\config`. Проверка: копия world_taiga — Forge ничего не спросил («missing»/«Unidentified» 0),
-  321 чанк переписан, 1277 новых чанков, TPS 20, каскада от мода нет (MrTJPCore 121, Quark 50, Dynamic Trees 24 — старые);
+  321 чанк переписан, 1277 новых чанков, TPS 20, каскада от мода нет (MrTJPCore 121, Quark 50, Dynamic Trees 24, LLibrary 6,
+  Mowzie's Mobs 1 — чужие);
   автотесты в клоне `1.12.2-test-M`: 11z-before → 11z-after (бочка с алмазами и сотами цела, блоки и мобы на месте), 11b, 11c PASS.
   11c повторён после установки с `--refresh` из 1.12.2-edit (в сценарии 11c исправлен порядок: сначала ждать чанки, потом
   ставить улей и цветы, иначе setblock попадал в незагруженные чанки). Скриншоты `F:\minecraft-mods\_M-11z-screens`.
@@ -71,7 +72,7 @@
   https://github.com/masterRaizer/modernbackports/pull/7 (ветка `stage/11c`), слит этапом M 23.11. Тест переноса миров 14/14,
   генерация без каскада (в т. ч. с Future MC и Dynamic Trees), отчёт `docs/stages/11c.md` со списком «проверить в игре».
   Нашёл и исправил крэш в общем коде 11a (`LiveRemap.hideFromTabs`: Future MC на Kotlin падал на `setCreativeTab(null)`) —
-  тот же патч нужен 11b/11d/11e (в 11f уже есть). Для 11z в `futuremc.cfg` выключить: «Spawn Rate»=0 у cornflower,
+  тот же патч нужен 11b/11d/11e (в 11f уже есть). (Устарело: Future MC уже убран.) Для 11z в `futuremc.cfg` выключить: «Spawn Rate»=0 у cornflower,
   lily of the valley, berry bush и пустой «Bee Nest Biome Spawns» (бамбук Future MC глушит код 11c, опции у него нет).
 - BuildCraft: `useSwappableSprites=false` (невидимые трубы с OptiFine).
 - TAIGA: пропатчен `tools/taiga_patch` (каскад 373 → 0), оригинал в `removed_mods/10_original_taiga`.
