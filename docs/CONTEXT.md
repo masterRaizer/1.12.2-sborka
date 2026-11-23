@@ -28,6 +28,7 @@
 | `8_castle_dungeons` | Castle Dungeons + его конфиг | замки с десятками спавнеров давали жуткие лаги, решено убрать совсем (19.11.2026) |
 | `9_futureversions` | Future Versions + старый `futuremc.cfg` | дубль Future MC, заменён своим модом modernbackports с миграцией миров (этап 01b). Бэкап миров до миграции: `F:\minecraft-mods\_saves-backup-before-01b` (19.11.2026) |
 | `12_futuremc_absorbed` | Future MC 0.2.21 + `config/futuremc` | всё его перенесено в modernbackports (этапы 11a–11h), миры переписываются при первой загрузке (этап 11z, 23.11.2026). Бэкап миров: `F:\minecraft-mods\_saves-backup-before-11z-futuremc` |
+| `13_nb_moreblocks_absorbed` | Unseen's Nether Backport 0.7, Nether API 1.4.2, MoreBlocks 1.7.0 + `config/Unseens Nether Backport`, `config/nether_api`; старые `apotheosis/enchantments.cfg` и `veinminer/tools-and-blocks.json` | всё перенесено в modernbackports (этапы 11f–11h, 11z-nb), миры переписываются при первой загрузке (DataFixer 7, 23.11.2026). Бэкап миров: `F:\minecraft-mods\_saves-backup-before-11z-nb` |
 
 Файлы с чужими именами переименованы по содержимому: TravelersTitles, Gobber, Artifacts, SwingThroughGrass, LargeOreDeposits.
 

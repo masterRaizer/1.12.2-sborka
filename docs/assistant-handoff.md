@@ -32,7 +32,7 @@
 
 - Рабочий инстанс `%APPDATA%\PrismLauncher\instances\1.12.2-edit`. Оригинальный `1.12.2(1)` не трогать.
 - Перед заменой jar: игра закрыта (`tasklist | grep javaw`), бэкап `saves` в `F:\minecraft-mods\_saves-backup-before-<что>`.
-- Убранные jar: `removed_mods\<номер>_<причина>` (сейчас 1–12, `7_replaced_by_update` для старых версий, `12_futuremc_absorbed` — Future MC).
+- Убранные jar: `removed_mods\<номер>_<причина>` (сейчас 1–13, `7_replaced_by_update` для старых версий, `12_futuremc_absorbed` — Future MC, `13_nb_moreblocks_absorbed` — Unseen's Nether, Nether API, MoreBlocks).
 
 ## Что сделано (кратко)
 
@@ -67,7 +67,31 @@
   `soul_fire_torch` → `soul_torch`, `soul_fire_lantern` → `soul_lantern`), snbt руками не править.
   **Для Shattered Citadels:** палитры/мебель/лут берут `futuremc:*` с запасным вариантом — добавить имена `modernbackports:*` первыми.
   Не переносятся из Future MC: «New Villager Gui» (окно торговли 1.14) и «Game Mode Switcher» (F3+F4) — кандидаты на этап интерфейса.
-  Unseen's Nether и MoreBlocks ещё стоят (следующие запуски 11z).
+  Unseen's Nether и MoreBlocks убраны этапом 11z-nb (ниже).
+- **Unseen's Nether, Nether API и MoreBlocks убраны (11z-nb, PR #16) и стоит 05c (PR #19); этап M 23.11.2026.**
+  Оба PR слиты в main modernbackports (f5ce670, b24ebdf), отметка в backport-plan 2a93bf6. `DataFixes.CURRENT=7`
+  (`nb`/`nether_api` — 6, `moreblocks` — 7; MoreBlocks нельзя убрать раньше Unseen's — `RemovedMods.checkOrder`).
+  Jar `modernbackports-0.0.1.jar` SHA-1 `2893e2076a37776c6ac0a24bec2773f4eae4ceee` (main b24ebdf, `--no-daemon`, javap: SRG-имена),
+  копия `F:\minecraft-mods\_M-11znb-jar`. verify.py `--fresh-world`: 0 ошибок, 0 предупреждений, 343 блока, 382 предмета, 32 сущности.
+  В 1.12.2-edit: три jar и `config/Unseens Nether Backport`, `config/nether_api` → `removed_mods_nb_moreblocks_absorbed`
+  (там же старые версии двух заменённых конфигов), старый jar → `7_replaced_by_update\modernbackports-0.0.1-before-11z-nb.jar`;
+  заменены `apotheosis/enchantments.cfg` (Скорость души `modernbackports:soul_speed` Max Level 50, как было у `nb:soul_speed`)
+  и `veinminer/tools-and-blocks.json` (без 13 строк `nb:`/`moreblocks:`). Бэкап saves `_saves-backup-before-11z-nb`.
+  Общий сервер: три мода и старый jar в `mods_client_only` (`modernbackports-0.0.1-before-11z-nb.jar`), их конфиги в
+  `_server-1.12.2emoved_11znb\config`, `world_taiga` перепишется при первом запуске.
+  Проверка на копии сервера `F:\minecraft-mods\_server-M-11znb` (лог `console_taiga.log`, `console_new.log`): копия world_taiga —
+  Forge ничего не спросил, 376 чанков переписаны (15 340 блоков), исключений от мода нет, TPS 20; новый мир — 1222 чанка
+  Верхнего мира и 1352 Незера, TPS 20, каскада от modernbackports нет (MrTJPCore 67, Dynamic Trees 39, Quark 15, LLibrary 2,
+  Apotheosis 2 — чужие); в мире 0 блоков `nb`/`moreblocks`, Незер наш (бастионы, 4 биома), бледный сад вырос (450 бревен,
+  2 сердца). Руин порталов в области не попалось.
+  Автотесты (клоны `1.12.2-test-M`, `1.12.2-test-M-chest`): 11znb-before → after/look/blocks/mech, 05c, 11b-stations,
+  11c-mobs-plants — PASS; сундук с 8 вещами `nb:`/`moreblocks:` после удаления открылся, все вещи на месте (в сценарии
+  11znb-before команда сундука разбита на `/replaceitem`, была длиннее 256 символов). Скриншоты `F:\minecraft-mods\_M-11znb-screens`.
+  **Для треда квестов:** `nb:*`/`moreblocks:*` в квестах и достижениях заменить по `modernbackports/docs/stages/11z-nb-remap-list.md`
+  (и `.csv`); `nb:soul_campfire` — несуществующий предмет. **Для Shattered Citadels:** то же для палитр.
+  Поглощение закончено: разблокированы 06, 02c, 03b (02b/02c/03b расширяют блоки `stages.s11z.mb`, а не регистрируют заново).
+  05c: броненосец, броня волка, скрипун, бледный дуб/мох/глазоцвет/смола, бледные сады в тёмных лесах; внешний вид сада в мире,
+  анимации и звуки проверяет владелец (список в `docs/stages/05c.md`).
 - 11c (пчёлы, ульи, мёд, ягоды, бамбук, панда, василёк/ландыш/роза визера, рагу): черновой PR
   https://github.com/masterRaizer/modernbackports/pull/7 (ветка `stage/11c`), слит этапом M 23.11. Тест переноса миров 14/14,
   генерация без каскада (в т. ч. с Future MC и Dynamic Trees), отчёт `docs/stages/11c.md` со списком «проверить в игре».
