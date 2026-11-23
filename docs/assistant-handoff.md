@@ -68,12 +68,12 @@
   `F:\minecraft-mods\_ref\graphics-menu\report.md`. В packautotest добавлены шаги `hover`/`hoverSlot` и `gui: "modConfig:<modid>"`.
 
 - **Генерация руд, верхний мир** (22–23.11.2026, владелец согласен оставить): у каждой руды один источник
-  (медь — Thermal и, по желанию владельца, медь 1.17 modernbackports; олово/серебро/свинец/никель — Thermal, уран — IC2,
+  (медь — Thermal и медь 1.17 modernbackports, возвращена по просьбе владельца 23.11; олово/серебро/свинец/никель — Thermal, уран — IC2,
   алюминий — боксит IE, осмий — Mekanism, кварц — AE2), ≈1 жила на 16 блоков высоты, жилы на ~20 настоящих блоков больше.
   Ваниль и руды без настроек (апатит, рубин, сапфир, перидот, электротин, дракониевая, Gobber) — в `config/cofh/world/05_pack_*.json`,
   ванильная генерация в dim 0 запрещена через `adlods/VanillaGen` (ReplaceStandardGeneration=false, Ад не тронут).
-  Разброс руд по частоте 163× → 4×, TPS 20, нового каскада нет. Стоит в 1.12.2-edit и на сервере; репозиторий — ветка
-  `ores-equal-veins`. Отчёт, скрипты (patch_ores.py, count_ores.py — подсчёт руд по .mca), откат rollback.bat:
+  Разброс руд по частоте 163× → 4×, TPS 20, нового каскада нет. Стоит в 1.12.2-edit и на сервере; слито в main
+  (PR #1, 23.11). Отчёт, скрипты (patch_ores.py, count_ores.py — подсчёт руд по .mca), откат `F:\minecraft-mods\_ref\ores\rollback.bat`:
   `F:\minecraft-mods\_ref\ores` и `tools/ores`. Бэкап saves `_saves-backup-before-ores`. Не тронуты TAIGA, самоцветы BoP, adlods.
   Изумруд и мезовое золото не измерены (в тестовой области не было гор/мезы). YUNG's Law превращает камень вдали от пещер в обсидиан.
 
