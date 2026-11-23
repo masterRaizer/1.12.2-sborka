@@ -47,7 +47,7 @@
 | 39 | `ForgeMultipart-1.12.2-2.6.1.81-universal.jar` | [CB Multipart](https://modrinth.com/mod/cb-multipart/version/B1HNQhlR) | `4fe28a1be2e3ae7b4b919ca5c0a3385b204c6b95` |
 | 40 | `Forgelin-Continuous-2.0.0.1.jar` | [Forgelin-Continuous](https://modrinth.com/mod/forgelin-continuous/version/5wvQO2Ks) | `26757ab3c773ac65863a1b91c5d4c9b87a6fe4bd` |
 | 41 | `FriendlyFire_1.12.2_1.5.8.jar` | [Friendly Fire](https://modrinth.com/mod/friendly-fire/version/GvJfiVwR) | `4515a22becf3612513c7d4d58f3db737467da6e5` |
-| 42 | `modernbackports-0.0.1.jar` | свой мод, приватный репозиторий masterRaizer/modernbackports (заменил Future Versions, этап 01b, Future MC, этап 11z, Unseen's Nether, Nether API и MoreBlocks, этап 11z-nb) | `2893e2076a37776c6ac0a24bec2773f4eae4ceee` |
+| 42 | `modernbackports-0.0.1.jar` | свой мод, приватный репозиторий masterRaizer/modernbackports (заменил Future Versions, этап 01b, Future MC, этап 11z, Unseen's Nether, Nether API и MoreBlocks, этап 11z-nb) | `518643e6a433a4127db9d026bfeb62764b3cb50a` |
 | 43 | `Gobber-1.12.2-1.1.202.jar` | CurseForge / архив (нет на Modrinth) | `6bb090ec3d306a00116a908944ec7bee68c652b9` |
 | 44 | `GokiStats-1.2.10.jar` | CurseForge / архив (нет на Modrinth) | `caa3d3fac833cf6d24f44c081783ba3b79a9cf48` |
 | 45 | `Hwyla-1.8.26-B41_1.12.2.jar` | [Hwyla](https://modrinth.com/mod/hwyla/version/pgcAdhbb) | `7280d5c0dab42436549bcefc63ff64a1049e5501` |
