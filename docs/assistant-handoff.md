@@ -79,7 +79,8 @@
   и `veinminer/tools-and-blocks.json` (без 13 строк `nb:`/`moreblocks:`). Бэкап saves `_saves-backup-before-11z-nb`.
   Общий сервер: три мода и старый jar в `mods_client_only` (`modernbackports-0.0.1-before-11z-nb.jar`), их конфиги в
   `_server-1.12.2\removed_11znb\config`, `world_taiga` перепишется при первом запуске.
-  Проверка на копии сервера `F:\minecraft-mods\_server-M-11znb` (лог `console_taiga.log`, `console_new.log`): копия world_taiga —
+  Проверка на копии сервера `_server-M-11znb` (после проверки удалена; логи сервера, автотестов и перепись мира — в
+  `F:\minecraft-mods\_M-11znb-jar\logs`): копия world_taiga —
   Forge ничего не спросил, 376 чанков переписаны (15 340 блоков), исключений от мода нет, TPS 20; новый мир — 1222 чанка
   Верхнего мира и 1352 Незера, TPS 20, каскада от modernbackports нет (MrTJPCore 67, Dynamic Trees 39, Quark 15, LLibrary 2,
   Apotheosis 2 — чужие); в мире 0 блоков `nb`/`moreblocks`, Незер наш (бастионы, 4 биома), бледный сад вырос (450 бревен,
