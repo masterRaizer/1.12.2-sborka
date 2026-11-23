@@ -39,8 +39,14 @@
 - 01b/01c/волна 1 (02a, 03a, 04a, 05a, 07a, 10a) слиты, общий jar `modernbackports-0.0.1.jar` стоит в Prism
   (бэкап `_saves-backup-before-wave1`). На сервере со всей сборкой: загружается, каскада от мода нет, TPS 20.
 - Future Versions убран. Дальше поглощение Future MC, Unseen's, MoreBlocks: этапы 11a–11z (11a запущен владельцем).
+- **Волна поглощения 11b–11h завершена (этап M, 22–23.11.2026).** PR #7–#13 слиты в main modernbackports,
+  `DataFixes.CURRENT=4`, общий jar (SHA-1 60cb5a31) стоит в 1.12.2-edit, бэкап saves `_saves-backup-before-M`,
+  отчёт `docs/stages/M2.md` (коммит 07f534a). Сервер: новый мир и копия world_taiga (15 752 блока заменены, реестры
+  level.dat до/после совпадают), TPS 20, каскада от мода нет; автотесты 11b-stations и 11c-mobs-plants PASS.
+  609 предупреждений «Object did not get ID it asked for» при первом заходе в старый мир — норма (новые объекты).
+  Ветки stage/11b–11h и worktree wt\11b–11h удалены. Этап 11z (futuremc) запущен 23.11.
 - 11c (пчёлы, ульи, мёд, ягоды, бамбук, панда, василёк/ландыш/роза визера, рагу): черновой PR
-  https://github.com/masterRaizer/modernbackports/pull/7 (ветка `stage/11c`), ждёт слияния этапом M. Тест переноса миров 14/14,
+  https://github.com/masterRaizer/modernbackports/pull/7 (ветка `stage/11c`), слит этапом M 23.11. Тест переноса миров 14/14,
   генерация без каскада (в т. ч. с Future MC и Dynamic Trees), отчёт `docs/stages/11c.md` со списком «проверить в игре».
   Нашёл и исправил крэш в общем коде 11a (`LiveRemap.hideFromTabs`: Future MC на Kotlin падал на `setCreativeTab(null)`) —
   тот же патч нужен 11b/11d/11e (в 11f уже есть). Для 11z в `futuremc.cfg` выключить: «Spawn Rate»=0 у cornflower,
