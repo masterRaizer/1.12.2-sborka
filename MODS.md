@@ -1,6 +1,6 @@
 # Список модов
 
-Всего jar-файлов: **205** (и ещё 1 в подпапке `mods/1.12.2/`). Minecraft 1.12.2, Forge 14.23.5.2860.
+Всего jar-файлов: **206** (и ещё 1 в подпапке `mods/1.12.2/`). Minecraft 1.12.2, Forge 14.23.5.2860.
 
 Сами jar-файлы в репозиторий не выложены: многие моды запрещают перезалив. Качайте по ссылкам (Modrinth) или с CurseForge по названию. SHA-1 нужен, чтобы проверить, что версия та же.
 
@@ -47,7 +47,7 @@
 | 39 | `ForgeMultipart-1.12.2-2.6.1.81-universal.jar` | [CB Multipart](https://modrinth.com/mod/cb-multipart/version/B1HNQhlR) | `4fe28a1be2e3ae7b4b919ca5c0a3385b204c6b95` |
 | 40 | `Forgelin-Continuous-2.0.0.1.jar` | [Forgelin-Continuous](https://modrinth.com/mod/forgelin-continuous/version/5wvQO2Ks) | `26757ab3c773ac65863a1b91c5d4c9b87a6fe4bd` |
 | 41 | `FriendlyFire_1.12.2_1.5.8.jar` | [Friendly Fire](https://modrinth.com/mod/friendly-fire/version/GvJfiVwR) | `4515a22becf3612513c7d4d58f3db737467da6e5` |
-| 42 | `modernbackports-0.0.1.jar` | свой мод, приватный репозиторий masterRaizer/modernbackports (заменил Future Versions, этап 01b, Future MC, этап 11z, Unseen's Nether, Nether API и MoreBlocks, этап 11z-nb) | `518643e6a433a4127db9d026bfeb62764b3cb50a` |
+| 42 | `modernbackports-0.0.1.jar` | свой мод, приватный репозиторий masterRaizer/modernbackports (заменил Future Versions, этап 01b, Future MC, этап 11z, Unseen's Nether, Nether API и MoreBlocks, этап 11z-nb); волна 4 (03b, 02c-axolotl, 05b, 04b, 10c, 07c) — этап M 25.11.2026 | `4c7fa31f40a9caa387a714c8e49f79ce9750505c` |
 | 43 | `Gobber-1.12.2-1.1.202.jar` | CurseForge / архив (нет на Modrinth) | `6bb090ec3d306a00116a908944ec7bee68c652b9` |
 | 44 | `GokiStats-1.2.10.jar` | CurseForge / архив (нет на Modrinth) | `caa3d3fac833cf6d24f44c081783ba3b79a9cf48` |
 | 45 | `Hwyla-1.8.26-B41_1.12.2.jar` | [Hwyla](https://modrinth.com/mod/hwyla/version/pgcAdhbb) | `7280d5c0dab42436549bcefc63ff64a1049e5501` |
@@ -211,6 +211,7 @@
 | 203 | `packautotest-0.1.0.jar` | свой мод `F:\minecraft-mods\packautotest`: автотест клиента (срабатывает только при файле `packquests-autotest.json`, иначе ничего не делает), 22.11.2026 | `4c4fd79a9295930caa930764f2e70e2912dc4177` |
 | 204 | `packquests-0.3.1.jar` | свой мод `F:\minecraft-mods\packquests`: кнопка «Квесты» (пауза и инвентарь), квестовая линейка и 780 достижений (клавиша L), 23.11.2026 | `75939b295a347fafbd3e9b8ac24085c9bdd7ad79` |
 | 205 | `shatteredcitadels-1.9.0.jar` | Shattered Citadels (другой агент): https://github.com/masterRaizer/Mods-Forge-1.12.2-, ветка `claude/brave-franklin-ttdlk9`, `dist/`; цитадели, храм в джунглях, храмы в мирах BoP, 23.11.2026 | `9e7aaecf32f9c49e825f13c0bc82ed0db8e2748a` |
+| 206 | `Controlling-3.0.12.2.jar` | [Controlling](https://modrinth.com/mod/controlling) 3.0.12.2 (MIT), только клиент: экран «Управление» с поиском и конфликтами клавиш (этап 10c modernbackports), 25.11.2026; на сервере в `mods_client_only` | `64e791db7eaf3577223a708df0325f07762bd059` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
