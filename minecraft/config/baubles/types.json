@@ -1,0 +1,56 @@
+{
+  "baubles:amulet": {
+    "name": "amulet",
+    "amount": 1,
+    "priority": 100,
+    "parent": []
+  },
+  "baubles:ring": {
+    "name": "ring",
+    "amount": 2,
+    "priority": 90,
+    "parent": []
+  },
+  "baubles:belt": {
+    "name": "belt",
+    "amount": 1,
+    "priority": 80,
+    "parent": []
+  },
+  "baubles:head": {
+    "name": "head",
+    "amount": 1,
+    "priority": 70,
+    "parent": []
+  },
+  "baubles:body": {
+    "name": "body",
+    "amount": 1,
+    "priority": 60,
+    "parent": []
+  },
+  "baubles:charm": {
+    "name": "charm",
+    "amount": 1,
+    "priority": 50,
+    "parent": []
+  },
+  "baubles:elytra": {
+    "name": "elytra",
+    "amount": 1,
+    "priority": 40,
+    "parent": [
+      "baubles:body"
+    ]
+  },
+  "baubles:bauble": {
+    "name": "bauble",
+    "amount": 12,
+    "priority": 30
+  },
+  "baubles:trinket": {
+    "name": "trinket",
+    "amount": 0,
+    "priority": 20
+  }
+}

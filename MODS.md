@@ -19,7 +19,7 @@
 | 11 | `Atlas-Lib-1.12.2-1.1.10.jar` | [Atlas Lib](https://modrinth.com/mod/atlas-lib/version/S4IUMRjT) | `21de74818e763f939bff0568405b83be5cc7c96d` |
 | 12 | `Atum-1.12.2-2.0.20.jar` | CurseForge / архив (нет на Modrinth) | `e42d06fb812f263fc4950f57b65fc558d60d4dbc` |
 | 13 | `AutoRegLib-1.3-32.jar` | [AutoRegLib](https://modrinth.com/mod/autoreglib/version/FgbUBupA) | `267269ca7f1a71fb3bb35bdb8e61702a4da6263e` |
-| 14 | `Baubles-1.12-1.5.2.jar` | CurseForge / архив (нет на Modrinth) | `cb13fcfb18a9cb0cbd825fd5fe8d813c77368549` |
+| 14 | `BaublesEX-1.12.2-2.3.7.jar` | CurseForge BaublesEX (project 1096600, file 8769637; заменил Baubles 1.5.2, тот же modid baubles; 20 слотов и слот элитр, конфиг config/baubles.cfg + config/baubles/types.json) | `51e1cc2e70601ac34c595f772a80e547f57fa138` |
 | 15 | `BetterAdvancements_1.12.2_0.0.16.71.jar` | CurseForge / архив (нет на Modrinth) | `2d3189a051e5bdd19a42b7eba1b03bb5c1b28aff` |
 | 16 | `BetterMineshaftsForge-1.12.2-2.2.1.jar` | CurseForge / архив (нет на Modrinth) | `590de926876fb792f48b120a3483970e8fff3aa3` |
 | 17 | `BetterQuesting-3.5.312.jar` | CurseForge / архив (нет на Modrinth) | `d340cead4c9e86d8993a8d027008b675667268ef` |
@@ -96,7 +96,7 @@
 | 88 | `TinkersAddons-1.12.1-1.0.7-stackable.jar` | **пропатчен** (см. tools/patch_tadd.py) | `efaec45f4dd58ee9ddfe8072e330c30555ec4810` |
 | 89 | `TravelersTitles-1.12.2-1.0.0.jar` | CurseForge / архив (нет на Modrinth) | `e9b8ca35bad7e44dd4d0607ae44a97973b6f45f6` |
 | 90 | `TreeChopper_1.12.2_1.2.4.jar` | CurseForge / архив (нет на Modrinth) | `2f909c06927e39d7fa6107a588cfa9dd81296e75` |
-| 91 | `Trinkets and Baubles-Forge-1.12.2-0.33.2.jar` | [Trinkets and Baubles](https://modrinth.com/mod/trinkets-and-baubles/version/VQAqygHQ) | `0955fae06bff1a3b80783faaf0e34a9e58c2ecc8` |
+| 91 | `Trinkets and Baubles-Forge-1.12.2-0.33.2-bex.jar` | [Trinkets and Baubles](https://modrinth.com/mod/trinkets-and-baubles/version/VQAqygHQ) 0.33.2, пропатчен под BaublesEX (tools/xat_bex_patch; оригинал SHA-1 0955fae06bff1a3b80783faaf0e34a9e58c2ecc8) | `aacda71fd27672b02e96f789f1742b4e999d2be8` |
 | 92 | `UniDict-1.12.2-2.9.2.jar` | CurseForge / архив (нет на Modrinth) | `3708fce1adc2c90e2b488402eeffcc6ca6e7d533` |
 | 93 | `VanillaIcecreamFix-1.0.5.jar` | [VanillaIcecreamFix](https://modrinth.com/mod/vanillaicecreamfix/version/2AlB9ocn) | `d00c93b7973a0942738cdc8f69c4c258cffd8440` |
 | 94 | `VeinMiner_1.12_0.38.1.639.jar` | CurseForge / архив (нет на Modrinth) | `a285824982269980914ad53c30ed9c5e918ab4b4` |
