@@ -167,7 +167,7 @@
 | 159 | `upsizer_mc1.12.1_4.0.jar` | CurseForge / архив (нет на Modrinth) | `bf1293a43cf4ce9693a08277c5244a2d3f20e9cd` |
 | 160 | `useful_backpacks-1.12.2-1.5.4.85.jar` | CurseForge / архив (нет на Modrinth) | `28220332b1597ae5b262bd9ceaef0cf4ab2b4ab3` |
 | 161 | `vintagefix-0.7.0.jar` | [VintageFix](https://modrinth.com/mod/vintagefix/version/6MuNBnRe) | `a753529902a23e17da091f15b6dee6690f75b217` |
-| 162 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `55f877b96d9733d9b1d8f5236c8c691032bdc95b` |
+| 162 | `tinkersbackports-0.1.0.jar` | свой мод: перенос Tinkers' Construct 1.7.10 и 3.x, код `F:\minecraft-mods\tinkersbackports` (22.11.2026) | `af636c6b6960e512b01bc44e3992cf8bef268a76` |
 | 163 | `TinkersComplement-1.12.2-0.4.3.jar` | CurseForge: Tinkers' Complement (file 2843439), поставлен 22.11.2026 вместе с tinkersbackports | `fa890e49c131e8ff93d8a4e6de0a5476083df6c3` |
 | 164 | `LegendaryTooltips-1.12.2-1.1.11.jar` | [Legendary Tooltips](https://modrinth.com/mod/legendary-tooltips/version/8rjxinu8), только клиент, поставлен 22.11.2026 (рамки подсказок как на MCSkill HiTech) | `f174a9ccf33df0bc1594713ef40dc8c0fce32205` |
 | 165 | `neverenoughanimations-1.0.6.jar` | NeverEnoughAnimations (CleanroomMC), jar из клиента MCSkill HiTech (нет на Modrinth), только клиент, 22.11.2026 | `d5851c65d8bd5877e5af5438616abc5f32c75655` |
@@ -212,6 +212,8 @@
 | 204 | `packquests-0.3.1.jar` | свой мод `F:\minecraft-mods\packquests`: кнопка «Квесты» (пауза и инвентарь), квестовая линейка и 780 достижений (клавиша L), 23.11.2026 | `75939b295a347fafbd3e9b8ac24085c9bdd7ad79` |
 | 205 | `shatteredcitadels-1.9.0.jar` | Shattered Citadels (другой агент): https://github.com/masterRaizer/Mods-Forge-1.12.2-, ветка `claude/brave-franklin-ttdlk9`, `dist/`; цитадели, храм в джунглях, храмы в мирах BoP, 23.11.2026 | `9e7aaecf32f9c49e825f13c0bc82ed0db8e2748a` |
 | 206 | `Controlling-3.0.12.2.jar` | [Controlling](https://modrinth.com/mod/controlling) 3.0.12.2 (MIT), только клиент: экран «Управление» с поиском и конфликтами клавиш (этап 10c modernbackports), 25.11.2026; на сервере в `mods_client_only` | `64e791db7eaf3577223a708df0325f07762bd059` |
+| 207 | `Chisel-MC1.12.2-1.0.2.45.jar` | CurseForge: Chisel (project 235279, file 2915375), по решению владельца 26.11.2026: узоры блоков; долото Tinkers из tinkersbackports работает как его долото. Генерирует мрамор, известняк и базальт в новых чанках (каскада нет, проверено 26.11) | `d378cee9195841ea78bb9800f543d718ef2c60ef` |
+| 208 | `CTM-MC1.12.2-1.0.2.31.jar` | CurseForge: ConnectedTexturesMod (project 267602, file 2915363), нужен Chisel, 26.11.2026 | `892e0788531269bfa2f356e4e12825e19d4e5412` |
 
 ## Моды в подпапке `mods/1.12.2/`
 
