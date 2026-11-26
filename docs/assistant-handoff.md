@@ -505,7 +505,11 @@ esourcepacks` (мод подключает сам, в options.txt включат
   `packautotest/scenarios/15-story.json`, клон `1.12.2-test-15-story`.
   Для 14-pripyat: учитывать метку `mb15_zone_calm` в PlayerPersisted NBT (радиация уровней 1–2 не действует).
   Для треда квестов: список невидимых достижений `modernbackports:story/<id>` — `docs/stages/15-story-advancements.md`.
-  Вопросы владельцу: шанс обрывков, сила финала, ночной визит Тишины у базы, обереги в ячейках Baubles.
+  Ответы владельца (26.11): шанс обрывков, сила финала, ночной визит Тишины, скалк — оставить как есть; обереги в Baubles — да.
+  **Обереги и три звезды в ячейках Baubles: PR https://github.com/masterRaizer/modernbackports/pull/47** (ветка
+  `stage/15-story-baubles`, клон `F:\minecraft-mods\wt\15-baubles`; старый клон `wt\15-story` удалён), ждёт этапа M.
+  Мягкая зависимость, конфиг `charms.baubleSlots`, команда `/mb15 wear <предмет>`. Проверено в игре автотестом
+  `15-story-baubles.json` (эффекты при пустом инвентаре, обереги в окне Baubles). Чужой файл: `gradle/scripts/dependencies.gradle` (+1 строка).
 - **Волна 9: 08-abyss, 08-outerend, 13-atm и этап 12 слиты и стоят (этап M, 26.11.2026).** PR #39 («Бездна», измерение 1207,
   сущности 3100–3105), #37 («Внешний Край», измерение 1206, 3050–3055), #41 (13-atm: металлы Allthemodium, звезда ATM; руды —
   `config/cofh/world/05_pack_atm_ores.json`, анобтаниум в Крае втрое реже по решению владельца, 152d7e7), #42 (этап 12: рыхлый
