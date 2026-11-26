@@ -488,7 +488,7 @@ esourcepacks` (мод подключает сам, в options.txt включат
   **Вопросы владельцу волны 8:** броня из скалка (как алмазная, ×35, 15 % на сундук), фантомов убрать совсем (`phantomEnabled=false`),
   цена огнива входа (око Края + 2 алмаза).
 
-- **Этап 15-story: сюжетная линия «Хроника пяти эпох» — код готов, ждёт проверки в игре и этапа M (26.11.2026).**
+- **Этап 15-story: сюжетная линия «Хроника пяти эпох» — слита и стоит (волна 11, 26.11.2026).**
   Главная цель сборки по словам владельца: сюжет с выбором игрока и книга с «утерянными знаниями». Черновой PR
   https://github.com/masterRaizer/modernbackports/pull/40 (ветка `stage/15-story`, клон `F:\minecraft-mods\wt\15-story`),
   отчёт `docs/stages/15-story.md`, заметки `docs/stages/15-story-notes.md`, сюжет (одобрен владельцем)
@@ -547,7 +547,31 @@ esourcepacks` (мод подключает сам, в options.txt включат
   12-gaps-2 удалены вместе с клонами `wt\13-atm`, `wt\12-gaps`, `wt\12-gaps-2` (незакоммиченные заметки 12-gaps сохранены в
   `F:\minecraft-mods\_notes\12-gaps-notes-wt-final.md`).
 
-- **Этап 14-pripyat: зона «Припять» готова, ждёт этапа M (26.11.2026).** Черновой PR
+- **Волна 11: Припять (14-pripyat, 14-pripyat-2) и сюжет (15-story) слиты и стоят (этап M, 26.11.2026).** PR #45 (зона «Припять»,
+  биом `modernbackports:pripyat`, мобы 3250–3254, босс Химера, `/mb14`), PR #46 (радиация по всей зоне: 1 везде, 2 ближе 110 блоков
+  к 4-му блоку, 3 внутри), PR #40 (сюжет «Хроника пяти эпох», дневник Mantle, свои достижения, обереги, финал с Отголоском, `/mb15`;
+  Mantle и FTBLib — compileOnly, в jar их классов нет); main 89b6153. Jar SHA-1 `dfe5c220d85a02c51e8500e1ef01f36d7197921d`
+  (`--no-daemon`, javap: SRG-имена), копия — `F:\minecraft-mods\_M-w11-jar` (логи там и в `logs\`). verify.py `--fresh-world`:
+  910 блоков / 1236 предметов / 112 сущностей, единственный FAIL — `book/story/appearance.json`: `"coverColor": 0x5a3a22` без кавычек
+  (Mantle читает, строгий JSON — нет; поправить кавычками). Dev: s14pripyat_test 7/7 (selftest 12/12, 1300 чанков, TPS 20, каскад 0),
+  s15story_test 11/11.
+  Проверено на сервере (копия `_server-M-w11`, Citadels 1.10.0, PackQuests ftbgen33): копия world_taiga — Forge ничего не спросил,
+  TPS 20, каскад 0; новый мир (сид 14): центр Припяти -1264 73 1040 (1636 блоков от спавна), `/mb14 selftest` 12/12 (и на финальном jar),
+  `/mb15 selftest` 11/11, все 87 страниц дневника доступны, 757 + 340 чанков, TPS 20, каскад от мода 0, ошибок Mantle/FTBLib и
+  «Zone check failed» (Citadels ForeignZones) нет.
+  Проверено в игре (автотесты, клон 1.12.2-test-M с Citadels 1.10.0): 14-pripyat PASS, в т.ч. уровни радиации 1/2/3 в трёх точках
+  (скриншоты `24-26_rad_*`), 15-story PASS, M11-charms PASS — подсказки оберегов («−15% получаемого урона», «Глушитель») без «Format error»
+  (сценарий `packautotest/scenarios/M11-charms.json`, мир survival: в creative открывается творческий инвентарь).
+  Apotheosis: `modernbackports:chimera` и `modernbackports:story_echo` = 0 в случайных спавнерах (`tools/apotheosis_tune.py`, BOSSES).
+  Установка: бэкап `_saves-backup-before-M-w11` (+ копия `C:\Users\avito\mc-backups\_saves-backup-before-M-w11` из-за сбоев F:);
+  в 1.12.2-edit старый jar (M10, 318a0304) → `removed_mods\7_replaced_by_update\modernbackports-0.0.1-before-M-w11.jar`.
+  Ветка stage/15-story и клон `wt\15-story` удалены. **stage/14-pripyat не удалена**: коммит a2da99e3 (заметки и отчёт после прогона 4)
+  не в main; `wt\14-pripyat` (на 14-pripyat-2) оставлен.
+  **Диск F: (ADATA SD620 по USB) отваливается**: 26.11 22:05–23:27 восемь переподключений, Ntfs 50 «сбой отложенной записи» ×95,
+  Ntfs 140 (журнал). Отсюда «No such device / No medium found» и падения java в 23:02. Владельцу сказано: кабель напрямую,
+  `chkdsk F: /scan`, отключить экономию USB. До починки: копии jar и логов держать на C:.
+
+- **Этап 14-pripyat: зона «Припять» готова, слита и стоит (волна 11, 26.11.2026).** Черновой PR
   https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt\14-pripyat`),
   отчёт `docs/stages/14-pripyat.md`, заметки `docs/stages/14-pripyat-notes.md`, промпт `F:\промпты майн 1.12.2\14-pripyat.txt`.
   Порт 26076, ID 3250–3299 (мобы 3250–3254), пакет `stages.s14pripyat`, команда `/mb14`, 1 Biome ID, вес генератора 2014.
