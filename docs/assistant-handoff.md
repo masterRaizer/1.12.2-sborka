@@ -565,9 +565,12 @@ esourcepacks` (мод подключает сам, в options.txt включат
   Apotheosis: `modernbackports:chimera` и `modernbackports:story_echo` = 0 в случайных спавнерах (`tools/apotheosis_tune.py`, BOSSES).
   Установка: бэкап `_saves-backup-before-M-w11` (+ копия `C:\Users\avito\mc-backups\_saves-backup-before-M-w11` из-за сбоев F:);
   в 1.12.2-edit старый jar (M10, 318a0304) → `removed_mods\7_replaced_by_update\modernbackports-0.0.1-before-M-w11.jar`.
+  Общий сервер `_server-1.12.2` (через LOCK): jar dfe5c220, старый → `mods_client_only\modernbackports-0.0.1-before-M-w11.jar`;
+  /mb14 selftest 12/12, TPS 20, каскад 0, ошибок регионов нет. Apotheosis: `modernbackports:chimera` и `story_echo` = 0 в deadly.cfg
+  (1.12.2-edit и общий сервер, `apotheosis_tune.py … bosses`). Автотест `--main` (M8) на 1.12.2-edit: PASS до и после правки конфига.
   Ветка stage/15-story и клон `wt\15-story` удалены. **stage/14-pripyat не удалена**: коммит a2da99e3 (заметки и отчёт после прогона 4)
   не в main; `wt\14-pripyat` (на 14-pripyat-2) оставлен.
-  **Диск F: (ADATA SD620 по USB) отваливается**: 26.11 22:05–23:27 восемь переподключений, Ntfs 50 «сбой отложенной записи» ×95,
+  **Диск F: (ADATA SD620 по USB) отваливается**: 26.11 22:05–23:46 десять переподключений, Ntfs 50 «сбой отложенной записи» ×95,
   Ntfs 140 (журнал). Отсюда «No such device / No medium found» и падения java в 23:02. Владельцу сказано: кабель напрямую,
   `chkdsk F: /scan`, отключить экономию USB. До починки: копии jar и логов держать на C:.
 
