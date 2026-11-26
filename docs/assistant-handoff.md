@@ -175,6 +175,7 @@
   lily of the valley, berry bush и пустой «Bee Nest Biome Spawns» (бамбук Future MC глушит код 11c, опции у него нет).
 - BuildCraft: `useSwappableSprites=false` (невидимые трубы с OptiFine).
 - TAIGA: пропатчен `tools/taiga_patch` (каскад 373 → 0), оригинал в `removed_mods/10_original_taiga`.
+- **Shattered Citadels 1.9.2 (26.11.2026, SHA-1 `f1f89550…`, коммит 6bb7d6d) запушена и стоит на общем сервере; в Prism (1.12.2-edit) ПОКА 1.9.1 — игра была запущена, поставить при закрытой игре (бэкап saves, 1.9.1 в `removed_mods_replaced_by_update`).** Исправлено: одна полоска здоровья у боссов из модов (Барако, фараон), у решётки сокровищницы текст про идолов. Проверено: 143 теста, автотест `citadels-192-check.json` PASS (снимки), сервер world_taiga загрузился, TPS 20. Мосты через реки: решения владельца и дизайн в `wt/citadels/docs/superpowers/specs/2026-11-26-river-bridges-design.md`, ждёт одобрения владельца, кода ещё нет.
 - **Shattered Citadels 1.9.1 стоит в Prism и на сервере (26.11.2026).** Разработка мода передана в этот проект: тред
   «Развивать мод Citadels дальше», клон `F:\minecraft-mods\wt\citadels` (ветка `claude/brave-franklin-ttdlk9`, сборка на JDK 21:
   `JAVA_HOME=%USERPROFILE%\.gradle\jdkszul_systems__inc_-21-amd64-windows.2 ./gradlew build --no-daemon -q`, Gradle 8.10 на JDK 25 не идёт).
