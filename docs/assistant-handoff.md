@@ -520,13 +520,13 @@ esourcepacks` (мод подключает сам, в options.txt включат
   `wt\12-gaps` оставлен (там незакоммиченные заметки, этап 12-2 идёт), `wt\13-atm` занят веткой 13-atm-2.
 
 - **Этап 14-pripyat: зона «Припять» готова, ждёт этапа M (26.11.2026).** Черновой PR
-  https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt-pripyat`),
-  отчёт `docs/stages/14-pripyat.md`, заметки `docs/stages/14-pripyat-notes.md`, промпт `F:\промпты майн 1.12.2-pripyat.txt`.
+  https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt\14-pripyat`),
+  отчёт `docs/stages/14-pripyat.md`, заметки `docs/stages/14-pripyat-notes.md`, промпт `F:\промпты майн 1.12.2\14-pripyat.txt`.
   Порт 26076, ID 3250–3299 (мобы 3250–3254), пакет `stages.s14pripyat`, команда `/mb14`, 1 Biome ID, вес генератора 2014.
   Биом один на мир (1600–2400 от спавна): город, АЭС с разрушенным 4-м блоком, радиация (`ic2:radiation`), мутанты,
   босс Химера в подземной лаборатории, лут. Проверено на сервере: dev 7/7, со всей сборкой (копия `_server-14`, seed 14,
   центр -1264 73 1040) selftest 12/12, 1099 чанков за 48 с, TPS 20, каскада от мода 0. Проверено в игре (автотест
-  `scenarios/14-pripyat.json`, клон `1.12.2-test-14-pripyat`, скриншоты `F:\minecraft-mods\_14-screensuto1..3`): город,
+  `scenarios/14-pripyat.json`, клон `1.12.2-test-14-pripyat`, скриншоты `F:\minecraft-mods\_14-screens\auto1..3`): город,
   АЭС, мобы, предметы, радиация, FPS 225–240. **Открыто:** Shattered Citadels строит замок поверх зоны — в Citadels
   нужно вызывать по reflection `modernbackports.stages.s14pripyat.PripyatZone.touches(world,x1,z1,x2,z2)`; в игре не
   видел стелу после правки буквы, лабораторию и бой с боссом. Jar этапа: `F:\minecraft-mods\_14-jar`.
