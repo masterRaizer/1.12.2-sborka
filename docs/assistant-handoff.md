@@ -579,6 +579,24 @@ esourcepacks` (мод подключает сам, в options.txt включат
   Ntfs 140 (журнал). Отсюда «No such device / No medium found» и падения java в 23:02. Владельцу сказано: кабель напрямую,
   `chkdsk F: /scan`, отключить экономию USB. До починки: копии jar и логов держать на C:.
 
+- **Волна 12: обереги сюжета в слотах Baubles (15-story-baubles, PR #47) — слита и стоит (этап M, 27.11.2026).** main 9365fb0
+  (+ e215d68a backport-plan). Jar SHA-1 `24bcd817fef6975cfb00384bffa1438eb5bb5c41`, копия `F:\minecraft-mods\_M-w12-jar`;
+  javap: `stages/s15story/compat/BaublesCompat` есть (SRG-имена). verify.py: 910/1236/112, только старый FAIL appearance.json (hex).
+  В сборке Baubles 1.12-1.5.2 (+ Trinkets and Baubles 0.33.2), BaublesEX не стоит. API BaublesEX 2.3.7 по javap совпадает
+  (modid baubles, BaublesApi.getBaublesHandler, IBaublesItemHandler, CAPABILITY_ITEM_BAUBLE, BaubleType.TRINKET).
+  Проверено на сервере (копия `_server-M-w11`): world_taiga — 108 исключений (база), каскад 0, TPS 20, `/mb15 selftest` 11/11;
+  новый мир (сид 1212) — 577 чанков, `/mb15` 11/11, `/mb14` 12/12, TPS 20, каскад от мода 0 (86 — MrTJPCore/Quark/DT/Mowzie, база).
+  Проверено в игре (автотест `scenarios/15-story-baubles.json`, клон 1.12.2-test-M): с Baubles 1.5.2 PASS — «bauble slot 0/1/-1»
+  (реликвия не носится), Сила и Спешка при пустом инвентаре, окно Baubles с двумя оберегами (скриншоты `2026-11-27_00.55.03`);
+  с BaublesEX 2.3.7 тоже PASS, ClassCastException нет, эффекты из слотов есть (`2026-11-27_01.00.13`); окно BaublesEX автотест
+  не открыл (у него другая клавиша) — не проверено. Клон возвращён на Baubles 1.5.2.
+  Установка: бэкап `_saves-backup-before-M-w12` (+ копия в `C:\Users\avito\mc-backups`), 1497 файлов, сверено; в 1.12.2-edit старый
+  jar (dfe5c220) → `removed_mods\7_replaced_by_update\modernbackports-0.0.1-before-M-w12.jar`. Общий сервер (через LOCK): jar 24bcd817,
+  старый → `mods_client_only\modernbackports-0.0.1-before-M-w12.jar`; `/mb15` 11/11, `/mb14` 12/12, TPS 20, 108 исключений (база);
+  первый запуск умер на старте из-за отвала F: в 01:00:36, второй прошёл. MODS.md: в M11 SHA-1 музыки был затёрт SHA-1 jar — исправлено.
+  **Ветки stage/15-story-baubles, stage/14-pripyat, stage/14-pripyat-2 целиком в main, но не удалены**: удаление веток на GitHub
+  ждёт разрешения владельца (автопроверка не дала). Клоны `wt\14-pripyat`, `wt\15-baubles` чистые, тоже ждут.
+
 - **Этап 14-pripyat: зона «Припять» готова, слита и стоит (волна 11, 26.11.2026).** Черновой PR
   https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt\14-pripyat`),
   отчёт `docs/stages/14-pripyat.md`, заметки `docs/stages/14-pripyat-notes.md`, промпт `F:\промпты майн 1.12.2\14-pripyat.txt`.
