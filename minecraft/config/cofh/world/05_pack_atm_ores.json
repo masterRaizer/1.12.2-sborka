@@ -1,0 +1,54 @@
+{
+	"dependencies": "modernbackports",
+	"populate": {
+		"pack_allthemodium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "modernbackports:allthemodium_ore"
+				},
+				"material": [
+					"minecraft:stone",
+					"modernbackports:deepslate"
+				],
+				"cluster-size": 4
+			},
+			"cluster-count": 1,
+			"chunk-chance": 2,
+			"min-height": 4,
+			"max-height": 20,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+		},
+		"pack_unobtainium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "modernbackports:unobtainium_ore"
+				},
+				"material": "minecraft:end_stone",
+				"cluster-size": 3
+			},
+			"cluster-count": 1,
+			"chunk-chance": 1,
+			"min-height": 20,
+			"max-height": 60,
+			"retrogen": "false",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					1
+				]
+			}
+		}
+	}
+}
