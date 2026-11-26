@@ -175,6 +175,15 @@
   lily of the valley, berry bush и пустой «Bee Nest Biome Spawns» (бамбук Future MC глушит код 11c, опции у него нет).
 - BuildCraft: `useSwappableSprites=false` (невидимые трубы с OptiFine).
 - TAIGA: пропатчен `tools/taiga_patch` (каскад 373 → 0), оригинал в `removed_mods/10_original_taiga`.
+- **htc_reactors (HiTech reactors): блоки на выделенном сервере (26.11.2026).** Блоки, ItemBlock и TileEntity регистрировал
+  только `ClientProxy` (`RegistryBlocks`), пустой `ServerProxy` от `addproxy.py` — ничего, поэтому на сервере не было 9 стаков
+  блоков (9 квестов, 10 достижений). Патч `tools/htc_reactors_patch` (ASM): `ServerProxy.<init>` подписывает `RegistryBlocks`.
+  Jar `htc_reactors-1.0.0-j8-srvfix.jar` SHA-1 `7b9b1ed2…` стоит в 1.12.2-edit и на общем сервере; старый —
+  `removed_mods/7_replaced_by_update/htc_reactors-1.0.0-j8-before-srvfix.jar` и `mods_client_only` сервера. Бэкап saves
+  `_saves-backup-before-htcreactors-patch`, рабочая папка и логи `F:\minecraft-mods\_patch\htc_reactors`. Сервер (новый мир):
+  все 9 стаков в `packquests dump`, `packquests check` без `htc_reactors`, setblock/testforblock работают, TPS 20. Автотест
+  `packautotest/scenarios/htcreactors-blocks.json` в клоне `1.12.2-test-htcreactors` PASS. MixedMod проверен так же: реестр
+  сервера и клиента совпадает (11 предметов), патч не нужен.
 - Shattered Citadels 1.6.2 стоит в Prism (сборки: https://github.com/masterRaizer/Mods-Forge-1.12.2-, ветка
   `claude/brave-franklin-ttdlk9`, папка `dist/`). На сервере: все постройки, старый мир 1.6.0/1.6.1 открывается.
 
