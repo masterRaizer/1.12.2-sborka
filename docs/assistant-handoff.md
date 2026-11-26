@@ -25,6 +25,9 @@
 - Долгие прогоны запускать в фоне. Каскадную генерацию считать так:
   `grep -o "\[FML\]: .* loaded a new chunk" console.log | sed 's/\[FML\]: //; s/ loaded a new chunk//' | sort | uniq -c`
 - `max-tick-time=-1` (watchdog выключен).
+- Память (с 26.11): `drive.py` во всех копиях `_server-*` берёт `--xmx` (по умолчанию `4G`, `-Xms1G`; `_server-stress` — `6G`).
+  Замер: 2500 чанков, TPS 20, old gen ~0.95 ГБ, процесс ~3.5 ГБ. `--xmx 6G` только для стресс-тестов и огромной генерации.
+  Чтение лога в `drive.py` не падает, если антивирус держит `console.log` (раньше сервер зависал на полном stdout).
 - В `drive.py` JVM-аргумент `-Dfml.readTimeout=120` (с 26.11, этап M волна 5): FTB Quests при входе грузит ~4000 файлов дольше 30 с.
 - Очередь: перед правкой `mods`/`server.properties` создать `_server-1.12.2\LOCK.txt` (тред и время); если файл есть, ждать.
   После прогона вернуть `level-name=world_taiga` и удалить LOCK.txt.
@@ -32,6 +35,11 @@
 ## Prism
 
 - Рабочий инстанс `%APPDATA%\PrismLauncher\instances\1.12.2-edit`. Оригинальный `1.12.2(1)` не трогать.
+- Память клиента (замер 26.11): живая куча в мире ~3.7 ГБ, процесс ~9 ГБ (куча 6 ГБ + ~3 ГБ текстуры/OptiFine). Куча 4 ГБ — GC-трэш
+  (загрузка 312 с), 5 ГБ — полные GC (174 с), 6 ГБ — 115 с. Клоны автотеста: `run_autotest.py` на каждом запуске ставит
+  Max 6144, Min 1024, без AlwaysPreTouch (`--xmx` для опытов); новый клиент — при свободных > 9 ГБ. В 1.12.2-edit сейчас
+  Min=Max 6144 + AlwaysPreTouch (сразу занимает 6 ГБ); рекомендовано Min 1024–2048 без PreTouch — ждёт согласия владельца.
+- Вместимость (32 ГБ, ~6 ГБ на систему): ~2 клиента + 2 сервера или 1 клиент + 4–5 серверов (раньше ~2 клиента + 1 сервер).
 - Перед заменой jar: игра закрыта (`tasklist | grep javaw`), бэкап `saves` в `F:\minecraft-mods\_saves-backup-before-<что>`.
 - Убранные jar: `removed_mods\<номер>_<причина>` (сейчас 1–13, `7_replaced_by_update` для старых версий, `12_futuremc_absorbed` — Future MC, `13_nb_moreblocks_absorbed` — Unseen's Nether, Nether API, MoreBlocks).
 
