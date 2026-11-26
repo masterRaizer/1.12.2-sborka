@@ -516,9 +516,28 @@ esourcepacks` (мод подключает сам, в options.txt включат
   нормальные. Apotheosis: Архонт (`modernbackports:archon`) и Жнец пустоты (`void_reaver`) обнулены в `deadly.cfg` (добавлены в
   BOSSES `tools/apotheosis_tune.py`). Установка: бэкап `_saves-backup-before-M-w9`; в 1.12.2-edit старый jar →
   `7_replaced_by_update\modernbackports-0.0.1-before-M-w9.jar`, конфиг ATM-руд и `deadly.cfg`, запуск с автотестом PASS (0 «Unidentified mapping»); общий сервер — то же
-  (ставит `_M-w9-jar/install_shared.sh` после LOCK треда Citadels), старый jar `mods_client_only\modernbackports-0.0.1-before-M-w9.jar`. Ветки stage/08-abyss, 08-outerend, 12-gaps удалены (клоны 08-* тоже);
+  — НЕ поставлен: скрипт `install_shared.sh` упал до изменений («No medium found»), на общий сервер сразу пошёл jar волны 10. Ветки stage/08-abyss, 08-outerend, 12-gaps удалены (клоны 08-* тоже);
   **stage/13-atm не удалена:** в ней коммит f92b692 (отчёт автотеста), которого нет ни в main, ни в 13-atm-2 — слить в M10;
   `wt\12-gaps` оставлен (там незакоммиченные заметки, этап 12-2 идёт), `wt\13-atm` занят веткой 13-atm-2.
+
+- **Волна 10: 13-atm-2 и 12-gaps-2 слиты и стоят (этап M, 26.11.2026).** PR #43 (13-atm-2: сплавы ATM в индукционной
+  плавильне Thermal и в плавильне Ender IO, рецепт верстака в коде, аура звезды ATM, unobtainiumChunkChance 3), PR #44 (12-gaps-2:
+  айсберги 0.10, волки в саваннах/пустошах/джунглях, spawnChunkRadius по умолчанию 2, огонь вдали от игроков горит как раньше),
+  коммит f92b692 (отчёт автотеста 13-atm); main 23d3231. Jar SHA-1 `318a0304f5edb8ec5eaae6a076001d0ed812c1ce` (`--no-daemon`,
+  javap -c: 2270 классов, SRG-имена, немаппленных 0), копия и логи — `F:\minecraft-mods\_M-w10-jar`. verify.py `--fresh-world`: 0 ошибок.
+  Проверено на сервере (копия `_server-M-w10`): копия world_taiga — Forge ничего не спросил, TPS 20, ошибок IMC Thermal/Ender IO 0;
+  новый мир (сид 2026112617) 434 чанка, TPS 20, каскад от мода 0 (чужой: MrTJPCore, Quark, Dynamic Trees); `/mb13` 76/76
+  (по 3 сплава в обеих плавильнях, аура 4 эффекта в радиусе 8), `/mb12` 47/47.
+  Проверено в игре (автотесты): 13-atm PASS (эффекты ауры видны в инвентаре; на экране значков эффектов нет — у ауры нет частиц, мелочь),
+  12-gaps PASS; запуск 1.12.2-edit с новым jar — см. `_M-w10-jar/logs/at-M10-main.log`.
+  **Конфиги:** Forge не обновляет уже созданные cfg при смене значений по умолчанию, поэтому в 1.12.2-edit и на серверах выставлено руками
+  (решения владельца): `12.cfg` icebergChance=0.10 и extraSpawns=true, `13-atm.cfg` unobtainiumChunkChance=3. Правила игры
+  (spawnChunkRadius, огонь) хранятся в level.dat: в существующих мирах остались прежними, не трогал. Apotheosis не менялся (новых боссов нет).
+  Установка: бэкап `_saves-backup-before-M-w10`; в 1.12.2-edit старый jar → `7_replaced_by_update\modernbackports-0.0.1-before-M-w10.jar`;
+  общий сервер (LOCK) — jar, `05_pack_atm_ores.json`, `deadly.cfg` из волны 9 (Архонт и Жнец пустоты = 0), старый jar (M8)
+  `mods_client_only\modernbackports-0.0.1-before-M-w10.jar`; старт 138 с, Unidentified 0, TPS 20. Ветки stage/13-atm, 13-atm-2,
+  12-gaps-2 удалены вместе с клонами `wt\13-atm`, `wt\12-gaps`, `wt\12-gaps-2` (незакоммиченные заметки 12-gaps сохранены в
+  `F:\minecraft-mods\_notes\12-gaps-notes-wt-final.md`).
 
 - **Этап 14-pripyat: зона «Припять» готова, ждёт этапа M (26.11.2026).** Черновой PR
   https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt\14-pripyat`),
