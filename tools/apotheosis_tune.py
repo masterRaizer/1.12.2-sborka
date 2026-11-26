@@ -6,7 +6,7 @@ BOSSES = ["minecraft:wither","minecraft:ender_dragon","minecraft:elder_guardian"
  "mowziesmobs:frostmaw","mowziesmobs:naga","modernbackports:warden","modernbackports:hornet_queen",
  "modernbackports:brood_mother","modernbackports:summoner","modernbackports:alchemist","modernbackports:barnacle",
  "modernbackports:stalker","shatteredcitadels:guardian_mage","atum:pharaoh","artifacts:mimic",
- "modernbackports:archon","modernbackports:void_reaver"]
+ "modernbackports:archon","modernbackports:void_reaver","modernbackports:chimera","modernbackports:story_echo"]
 def edit(name, fn):
     p = os.path.join(d, name); s = open(p, encoding='utf-8', newline='').read(); n = fn(s)
     if n != s: open(p, 'w', encoding='utf-8', newline='').write(n); print('edited', name)
