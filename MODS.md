@@ -181,7 +181,7 @@
 | 173 | `ModularMachinery-CE-2.1.4-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `90f7cd07e9a934a667d361b1bb0fe21d2e1d78ca` |
 | 174 | `NovaEngineering-Core-1.21.1-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `be0bce7d4957221bf031726ac99e66e045e8f162` |
 | 175 | `SauriaLib3-3.2.1-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `9392a830e98857406598e426e791f98066c5ba47` |
-| 176 | `htc_reactors-1.0.0-j8.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`) | `d2bdad8b31af5f316517a6c6cb85b57018d71a04` |
+| 176 | `htc_reactors-1.0.0-j8-srvfix.jar` | набор HiTech (клиент McSkill HiTech 1.12.2, переведён на Java 8: `tools/ic2_hitech`), **пропатчен**: блоки регистрируются и на выделенном сервере, код в `tools/htc_reactors_patch` (до патча `d2bdad8b31af5f316517a6c6cb85b57018d71a04`) | `7b9b1ed2b3d0890834c17c652314edbf71d64137` |
 | 177 | `ContentTweaker-1.12.2-4.10.0.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `421dcb21ddd62a5f4ae61e72bf2a65e8857835a2` |
 | 178 | `CraftTweaker2-1.12-4.1.20.693.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `f3c4dbcb4ca9d4d2e0905b644e9069b1ff5a9f68` |
 | 179 | `ExtendedAE-1.12-0.0.1.jar` | набор HiTech (клиент McSkill HiTech 1.12.2) | `f837244c03a3279c98e4ed71ab1affe9b1fed59f` |
