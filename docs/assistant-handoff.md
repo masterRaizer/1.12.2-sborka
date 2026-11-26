@@ -175,8 +175,16 @@
   lily of the valley, berry bush и пустой «Bee Nest Biome Spawns» (бамбук Future MC глушит код 11c, опции у него нет).
 - BuildCraft: `useSwappableSprites=false` (невидимые трубы с OptiFine).
 - TAIGA: пропатчен `tools/taiga_patch` (каскад 373 → 0), оригинал в `removed_mods/10_original_taiga`.
-- Shattered Citadels 1.6.2 стоит в Prism (сборки: https://github.com/masterRaizer/Mods-Forge-1.12.2-, ветка
-  `claude/brave-franklin-ttdlk9`, папка `dist/`). На сервере: все постройки, старый мир 1.6.0/1.6.1 открывается.
+- **Shattered Citadels 1.9.1 стоит в Prism и на сервере (26.11.2026).** Разработка мода передана в этот проект: тред
+  «Развивать мод Citadels дальше», клон `F:\minecraft-mods\wt\citadels` (ветка `claude/brave-franklin-ttdlk9`, сборка на JDK 21:
+  `JAVA_HOME=%USERPROFILE%\.gradle\jdkszul_systems__inc_-21-amd64-windows.2 ./gradlew build --no-daemon -q`, Gradle 8.10 на JDK 25 не идёт).
+  Сначала читать `docs/TRANSFER.md` репозитория мода. PR не открывать, пока владелец не попросит; jar в `dist/`.
+  1.9.1 (SHA-1 `bb1dafa5…`): палитры, мебель и лут берут `modernbackports:*` вместо удалённых Future MC, Unseen's Nether, MoreBlocks
+  (в логе 128 модовых вариантов палитр вместо 99). Сервер: новый мир BOP (1500 чанков, TPS 20, каскада от мода нет, строка
+  «our temples take its desert and jungle sites»), старый мир от 1.9.0 открылся (13 записей). В игре (клон `1.12.2-test-citadels`,
+  сценарии `packautotest/scenarios/citadels-s5-build.json` и `-check.json`, снимки `F:\minecraft-mods\_citadels-screens-pass2`):
+  3 идола из тайников → 3 пьедестала → сокровищница открылась; коробка Mekanism кирпич и решётку не берёт; фараон Atum и Барако
+  вызываются, после смерти печати сундука снимаются. Бэкап saves `_saves-backup-before-sc191`. Следующая работа: мосты через реки.
 
 - **Tinkers' Backports** (свой мод, отдельный jar, 22.11.2026): перенос всего из Tinkers 1.7.10 и 3.x (3.12.1 для
   1.20.1, последняя). Код `F:\minecraft-mods\tinkersbackports` (локальный git, на GitHub ещё нет), сверка
