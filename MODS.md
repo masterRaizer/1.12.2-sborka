@@ -215,7 +215,6 @@
 | 207 | `Chisel-MC1.12.2-1.0.2.45.jar` | CurseForge: Chisel (project 235279, file 2915375), по решению владельца 26.11.2026: узоры блоков; долото Tinkers из tinkersbackports работает как его долото. Генерирует мрамор, известняк и базальт в новых чанках (каскада нет, проверено 26.11) | `d378cee9195841ea78bb9800f543d718ef2c60ef` |
 | 208 | `CTM-MC1.12.2-1.0.2.31.jar` | CurseForge: ConnectedTexturesMod (project 267602, file 2915363), нужен Chisel, 26.11.2026 | `892e0788531269bfa2f356e4e12825e19d4e5412` |
 | 209 | `VillageNames-1.12.2-5.0.jar` | [Village Names](https://modrinth.com/mod/village-names) 5.0: облик жителей 1.14, имена деревень, каменщик 1.14 (камнерез из modernbackports 12 даёт его), по решению владельца 26.11.2026; жители в деревнях не пропадают (проверено на сервере) | `cc0a1d7c93883f86541dcf157fd5ce2355fbb7e2` |
-| 210 | `SmoothEntityLight-4.0.4-MC1.12.2-autolight.jar` | CurseForge: [Smooth Entity Light](https://www.curseforge.com/minecraft/mc-mods/smooth-entity-light) 4.0.4 (file 3024600, SHA-1 оригинала `762c4d5a0a963308cc0c6a064e3ca8ece8a73314`), пропатчен `tools/sel_patch`: свет от предметов в руке по яркости их блока, вход на серверы без мода. Только клиент | `6663e65f261f381a7c12c50303a9223f4ba7a931` |
 
 ## Моды в подпапке `mods/1.12.2/`
 

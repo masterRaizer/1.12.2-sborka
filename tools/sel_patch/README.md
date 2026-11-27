@@ -21,3 +21,5 @@
     java -cp "asm-debug-all-5.2.jar;tool" PatchSel SmoothEntityLight-4.0.4-MC1.12.2.jar auto/lakmoore/sel/client/SELAutoLight.class SmoothEntityLight-4.0.4-MC1.12.2-autolight.jar
 
 `stubs/` нужны только для компиляции (SRG-имена методов Minecraft), в jar не попадают.
+
+**Убран 27.11.2026** по решению владельца: игра падала при загрузке (NPE в EventHandler.onAttachEntityCapabilities, Artifacts создаёт EntityMimic в init). Jar в removed_mods/14_smoothentitylight_crash.
