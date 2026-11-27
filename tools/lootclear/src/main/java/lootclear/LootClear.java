@@ -82,6 +82,15 @@ public class LootClear {
         public static String[] itemBlacklist = {"minecraft:dragon_egg", "minecraft:nether_star", "minecraft:elytra",
                 "minecraft:beacon", "minecraft:totem_of_undying"};
 
+        @Config.Comment("Keep items lying in water (water channels of item farms)")
+        public static boolean keepInWater = true;
+
+        @Config.Comment("Keep items that are moving (carried by conveyors, water, pistons)")
+        public static boolean keepMoving = true;
+
+        @Config.Comment("Keep items on or in blocks whose id contains one of these words (conveyors)")
+        public static String[] conveyorWords = {"conveyor", "belt"};
+
         @Config.Comment("Dimension ids where nothing is cleared")
         public static int[] dimensionBlacklist = {};
 
@@ -188,12 +197,29 @@ public class LootClear {
             ResourceLocation id = stack.getItem().getRegistryName();
             if (id != null && blacklist.contains(id.toString())) return false;
         }
+        if (Cfg.keepInWater && item.isInWater()) return false;
+        if (Cfg.keepMoving && Math.abs(item.motionX) + Math.abs(item.motionZ) > 0.02) return false;
+        if (Cfg.conveyorWords.length > 0) {
+            BlockPos pos = new BlockPos(item);
+            if (isConveyor(item, pos) || isConveyor(item, pos.down())) return false;
+        }
         NBTTagCompound nbt = new NBTTagCompound();
         item.writeToNBT(nbt);
         int age = nbt.getShort("Age");
         int pickupDelay = nbt.getShort("PickupDelay");
         if (Cfg.keepNeverDespawn && (age == -32768 || pickupDelay == 32767)) return false;
         return age >= minAge;
+    }
+
+    private static boolean isConveyor(EntityItem item, BlockPos pos) {
+        if (!item.world.isBlockLoaded(pos)) return false;
+        ResourceLocation id = item.world.getBlockState(pos).getBlock().getRegistryName();
+        if (id == null) return false;
+        String path = id.getPath().toLowerCase(java.util.Locale.ROOT);
+        for (String w : Cfg.conveyorWords) {
+            if (!w.isEmpty() && path.contains(w.toLowerCase(java.util.Locale.ROOT))) return true;
+        }
+        return false;
     }
 
     private static void broadcast(String text) {
