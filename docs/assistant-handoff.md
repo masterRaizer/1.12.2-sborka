@@ -601,6 +601,22 @@ esourcepacks` (мод подключает сам, в options.txt включат
   **Ветки stage/15-story-baubles, stage/14-pripyat, stage/14-pripyat-2 целиком в main, но не удалены**: удаление веток на GitHub
   ждёт разрешения владельца (автопроверка не дала). Клоны `wt\14-pripyat`, `wt\15-baubles` чистые, тоже ждут.
 
+- **Волна 13: отчёт 06 (PR #48) и доводка Изнанки 08-otherside (PR #49) — слиты и стоят (этап M, 27.11.2026).** main 97fac92c.
+  Jar SHA-1 `8437deb7a4c1d7981683f7df4e2b0d4b3e87f066`, копия `C:\Users\avito\mc-backups\modernbackports-jars\modernbackports-0.0.1-M13-8437deb7.jar`.
+  Изменения: руины Изнанки около 1 на 30 чанков (ключ `ruins.ruinTries`=20, старый `ruinChance` игнорируется), густой туман
+  `ThickFog` (только клиент, javap: `value=Side.CLIENT`), Сердце глубин в сокровищнице цитадели, команды `/mb08o census|sneak|locate|seaportal|fog`.
+  Проверено на сервере (копия `_server-M-w11`): world_taiga — `/mb08o` 15/15, `/mb15` без FAIL, TPS 20, 108 исключений (база);
+  новый мир (сид 1313) — 1203 чанка Изнанки, 40 сундуков руин (1 на 30), `/mb08o` 15/15, `/mb14` 12/12, TPS 20, каскад от мода 0.
+  Проверено в игре (клон 1.12.2-test-M): 08-otherside-checks PASS, -fog PASS (скриншоты `2026-11-27_14.40.23`, `14.27.53`: туман,
+  руины, сундуки), -return: переходы через порталы города и моря работают, FAIL только ожидания прогрузки чанков.
+  «Артефакты» у владельца — ошибка packautotest, не мода: шаг `option ofFastRender:false` писал поле в обход OptiFine, основной
+  framebuffer оставался 0x0 (мусор на экране, скриншоты «Width (0)»). Исправлено в packautotest 607dd9d (Config.updateFramebufferSize),
+  повторный fog снял все 4 скриншота. Установка: бэкап `_saves-backup-before-M-w13` (+ копия в `C:\Users\avito\mc-backups`), 1502 файла;
+  1.12.2-edit: старый 24bcd817 → `removed_mods\7_replaced_by_update\modernbackports-0.0.1-before-M-w13.jar`; общий сервер (LOCK):
+  старый → `mods_client_only\modernbackports-0.0.1-before-M-w13.jar`, `/mb08o` 15/15, `/mb15` 11/11, `/mb14` 12/12, TPS 20,
+  108 исключений (база), `ruinTries=20` в cfg есть. В cfg 1.12.2-edit ключ появится при первом запуске игры.
+  Ветки stage/06 и stage/08-otherside не удалены (ждут «да» владельца).
+
 - **Этап 14-pripyat: зона «Припять» готова, слита и стоит (волна 11, 26.11.2026).** Черновой PR
   https://github.com/masterRaizer/modernbackports/pull/45 (ветка `stage/14-pripyat`, клон `F:\minecraft-mods\wt\14-pripyat`),
   отчёт `docs/stages/14-pripyat.md`, заметки `docs/stages/14-pripyat-notes.md`, промпт `F:\промпты майн 1.12.2\14-pripyat.txt`.
