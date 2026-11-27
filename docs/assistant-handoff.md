@@ -32,6 +32,16 @@
 - Очередь: перед правкой `mods`/`server.properties` создать `_server-1.12.2\LOCK.txt` (тред и время); если файл есть, ждать.
   После прогона вернуть `level-name=world_taiga` и удалить LOCK.txt.
 
+## Постоянный сервер для игры с другом (27.11)
+- Папка `C:\minecraft-server` (перенесён с F:, старая копия `F:\minecraft-server_old-copy` — удалит владелец). Тестовый `_server-1.12.2` не трогать и не путать.
+- Панель `C:\minecraft-server\ServerPanel.exe` (C#, .NET 4.8, исходники `F:\minecraft-mods\serverpanel`, API на порту 25580, `tools/panelapi.py`). Мир `servers\sborka\world` (BoP Huge + Continents), 10 ГБ, online-mode=false, whitelist выключен.
+- Подключение друга: мод e4steam (Steam P2P, без роутера и VPS). Адрес вида `d-….steam` меняется при каждом запуске, показан на главной панели. Steam на ноутбуке должен быть запущен и залогинен (входит владелец сам). По IP боты не заходят (только Steam).
+- Код выхода -1073740791 при остановке с e4steam — нативный сбой JVM после сохранения, панель не считает его крашем.
+- Мод `pingtab` (только сервер, `F:\minecraft-mods\pingtab`): пинг в мс в TAB, TPS в подвале, команда `/ms` (`/ping` занят u_team_core).
+- e4steam (оригинал v0.3.2) в `1.12.2-edit/mods` с 27.11; сборка для друга — кнопка в панели, zip в `C:\minecraft-server\client-pack`.
+- Не проверено: вход друга через Steam (клиент на том же Steam-аккаунте не доказателен; автотест упал — у ноутбука не было активного экрана), восстановление бэкапа, создание сервера с другим ядром. Автозапуск Windows (HKCU Run) ещё указывает на F: — владелец переключает галочку в панели сам.
+- Заметки треда: `F:\minecraft-mods\_notes\permanent-server.md`.
+
 ## Prism
 
 - Рабочий инстанс `%APPDATA%\PrismLauncher\instances\1.12.2-edit`. Оригинальный `1.12.2(1)` не трогать.
