@@ -1,0 +1,1 @@
+package net.minecraft.block; public class Block { public net.minecraft.block.state.IBlockState func_176203_a(int m) { return null; } public final net.minecraft.block.state.IBlockState func_176223_P() { return null; } }

@@ -66,7 +66,7 @@
 | 58 | `NoEnchantmentCapLevel-forge-1.12.2-v1.0.jar` | [No Enchantment Cap Level](https://modrinth.com/mod/no-enchantment-cap-level/version/kcjSCZHZ) | `e08a058a1655399e00f28a19ddcac0707c6bfdf6` |
 | 59 | `NoMoreRecipeConflict-0.13(1.12.2).jar` | CurseForge / архив (нет на Modrinth) | `b6eb46393d7b163c9704ceaeb42fa2b9115ab980` |
 | 60 | `NotEnoughIDs-1.5.4.4.jar` | CurseForge / архив (нет на Modrinth) | `30c75dbc917207050762c8ff77e70f57944f5a48` |
-| 61 | `OptiFine_1.12.2_HD_U_G5.jar` | CurseForge / архив (нет на Modrinth) | `ca3aea3a09ce215906c346fe190907fe0347b0c4` |
+| 61 | `OptiFine_1.12.2_HD_U_G5.jar` (выключен 27.11.2026: `.jar.disabled`) | CurseForge / архив (нет на Modrinth) | `ca3aea3a09ce215906c346fe190907fe0347b0c4` |
 | 62 | `Placebo-1.12.2-1.6.1.jar` | CurseForge / архив (нет на Modrinth) | `d2142220e0944a8ad9d76ad7f50a5aa8d4e5fd80` |
 | 63 | `PlayerRevive_v1.2.40_mc1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `1a71c772ce996d0a7dcad0497260de98f5cd757f` |
 | 64 | `PotionCore-1.9_for_1.12.2.jar` | CurseForge / архив (нет на Modrinth) | `c22bce1ca24762712680b9e107b77df921847f14` |
@@ -215,6 +215,7 @@
 | 207 | `Chisel-MC1.12.2-1.0.2.45.jar` | CurseForge: Chisel (project 235279, file 2915375), по решению владельца 26.11.2026: узоры блоков; долото Tinkers из tinkersbackports работает как его долото. Генерирует мрамор, известняк и базальт в новых чанках (каскада нет, проверено 26.11) | `d378cee9195841ea78bb9800f543d718ef2c60ef` |
 | 208 | `CTM-MC1.12.2-1.0.2.31.jar` | CurseForge: ConnectedTexturesMod (project 267602, file 2915363), нужен Chisel, 26.11.2026 | `892e0788531269bfa2f356e4e12825e19d4e5412` |
 | 209 | `VillageNames-1.12.2-5.0.jar` | [Village Names](https://modrinth.com/mod/village-names) 5.0: облик жителей 1.14, имена деревень, каменщик 1.14 (камнерез из modernbackports 12 даёт его), по решению владельца 26.11.2026; жители в деревнях не пропадают (проверено на сервере) | `cc0a1d7c93883f86541dcf157fd5ce2355fbb7e2` |
+| 210 | `SmoothEntityLight-4.0.4-MC1.12.2-autolight.jar` | CurseForge: [Smooth Entity Light](https://www.curseforge.com/minecraft/mc-mods/smooth-entity-light) 4.0.4 (file 3024600, SHA-1 оригинала `762c4d5a0a963308cc0c6a064e3ca8ece8a73314`), пропатчен `tools/sel_patch`: свет от предметов в руке по яркости их блока, вход на серверы без мода. Только клиент | `6663e65f261f381a7c12c50303a9223f4ba7a931` |
 
 ## Моды в подпапке `mods/1.12.2/`
 

@@ -68,7 +68,7 @@ Biomes O' Plenty, Dynamic Trees + DT BoP, Quark + AutoRegLib, Mowzie's Mobs (+ l
 - [ ] В мирах, где уже сгенерированы замки Castle Dungeons, они остались: это ванильные блоки и спавнеры. Новые замки больше не появятся.
 - [x] Каскадная генерация TAIGA (373 случая на 950 чанков, главный источник фризов при исследовании): пять генераторов в `com/sosnitzka/taiga/util/Generator` ставили блоки без сдвига +8. Пропатчено `tools/taiga_patch/PatchTaiga.java` (22.11.2026), после патча 0 случаев на 1137 чанках. Оригинал в `removed_mods/10_original_taiga`.
 - [ ] Остальная каскадная генерация на 1137 чанках: MrTJPCore (руды ProjectRed) 84, Quark 33, Dynamic Trees 24.
-- [x] Невидимые трубы BuildCraft: OptiFine не мог загрузить ~800 спрайтов BuildCraft. Исправлено `useSwappableSprites=false` в `config/buildcraft/main.cfg` (20.11.2026), ошибок `Error uploading sprite single` больше нет.
+- [x] Невидимые трубы BuildCraft: OptiFine не мог загрузить ~800 спрайтов BuildCraft. Исправлено `useSwappableSprites=false` в `config/buildcraft/main.cfg` (20.11.2026), ошибок `Error uploading sprite single` больше нет. 27.11.2026 отменено: из-за `false` жидкости BuildCraft стали фиолетовыми, OptiFine выключен, настройка снова `true`.
 - [ ] Трубы ProjectRed в мире рисуются плоскими цветными столбами (иконки в инвентаре нормальные). Проверяется настройками OptiFine (Fast Render, Render Regions, анизотропная фильтрация).
 - [ ] Перенести всё в основную сборку. В старых мирах включить `/gamerule doMobSpawning true`.
 - [ ] (опционально) spark для профилирования, если снова будут фризы.
