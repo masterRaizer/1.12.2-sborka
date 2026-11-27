@@ -1,0 +1,1 @@
+Loot Clear (lootclear) for 1.12.2. Built from the pingtab RetroFuturaGradle template: copy build.gradle, settings.gradle, gradlew* and gradle/ from F:\minecraft-mods\pingtab, then gradlew build --no-daemon (JAVA_HOME = JDK 25 from ~/.gradle/jdks).
