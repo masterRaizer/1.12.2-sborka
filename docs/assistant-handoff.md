@@ -44,6 +44,7 @@
 - Серверный e4steam пропатчен (28.11): `F:\minecraft-mods\serverpanel\tools\e4steam_sendretry` (send ждёт до 20 с при полном буфере) + `e4steam_tuning` (E4Fix: буфер Steam 32 МБ вместо 512 КБ, скорость 1–16 МБ/с; в логе строка `[e4steam-fix] Steam send tuning`). Причина киков друга: маленький буфер + блокировка потока пакетов + лаг сервера. Старые jar в `removed_mods/7_replaced_by_update`.
 - Trinkets and Baubles: `B:VIP=false` (NPE при выходе игрока маскировал настоящую причину кика).
 - Прегенерация 28.11 готова и влита: обычный мир ±5000, Незер/Край ±1500, доп. миры ±500 (мир 4.6 ГБ). Инструменты `serverpanel/tools/pregen_*.py`, журнал ошибок генерации `C:\minecraft-server\pregen-logs\pregen-errors.md` (TAIGA taiga_meteors.dat, CME пасеки и др. — чинить с согласия владельца).
+- Мод `tparequest` (28.11, только сервер, исходник `tools/tparequest`, сборка в `C:\Users\avito\dev\tparequest`): `/tpa ник`, `/tpahere ник`, `/tpaccept` (алиас `/tpaacept`), `/tpadeny`, `/tpacancel` для всех без op, кликабельные [✔]/[✖] в чате, таймаут 60 с (`config/tparequest.cfg`). Бот-тест `tools/tparequest/test/run_test.py` 26/26, со всей сборкой на тестовом сервере TPS 20. 1.0.0 SHA-1 ccf7508b… лежит в mods тестового сервера; на постоянный ставит тред сервера (передано координатору 28.11).
 - Заметки треда: `F:\minecraft-mods\_notes\permanent-server.md`.
 
 ## Prism
