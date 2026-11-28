@@ -1,0 +1,9 @@
+chestsort.sort=Sort (%s)
+chestsort.criterion=Sort criterion: %s
+chestsort.hint=Click: next, Shift+click: previous
+chestsort.sorted=Sorting: %s
+chestsort.hotbar=The hotbar is not sorted
+chestsort.crit.name=by name
+chestsort.crit.mod=by mod
+chestsort.crit.count=by count
+chestsort.crit.category=by category and ID

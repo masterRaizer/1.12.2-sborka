@@ -1,0 +1,9 @@
+chestsort.sort=Сортировать (%s)
+chestsort.criterion=Критерий: %s
+chestsort.hint=Клик: следующий, Shift+клик: предыдущий
+chestsort.sorted=Сортировка: %s
+chestsort.hotbar=Хотбар не сортируется
+chestsort.crit.name=по названию
+chestsort.crit.mod=по моду
+chestsort.crit.count=по количеству
+chestsort.crit.category=по категории и ID
