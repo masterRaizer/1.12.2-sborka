@@ -1,0 +1,315 @@
+#################
+#     Config    #
+#################
+conarm.general.spawnwithbook=Книга при первом входе
+conarm.general.spawnwithbook.tooltip=Если true, игроки при первом входе в мир получают книгу «Оружейное дополнение»
+conarm.general.compactview=Компактный интерфейс
+conarm.general.compactview.tooltip=Если true, в Станции брони и Кузне брони не показывается панель предпросмотра брони
+conarm.general.bouncedurability=«Прыгучесть» тратит прочность
+conarm.general.bouncedurability.tooltip=Если true, черта «Прыгучесть» тратит прочность брони при каждом отскоке
+conarm.general.leveling=Уровни брони
+conarm.general.leveling.tooltip=Настройки опыта и уровней брони
+
+conarm.general.leveling.newarmorminmodifiers=Начальное число улучшений
+conarm.general.leveling.newarmorminmodifiers.tooltip=Уменьшает число слотов улучшений у только что созданной брони, если это значение меньше обычного числа слотов этой брони.
+conarm.general.leveling.maximumlevels=Максимальный уровень
+conarm.general.leveling.maximumlevels.tooltip=Максимально достижимый уровень. Если 0 или меньше, ограничения нет.
+conarm.general.leveling.basexp=Базовый опыт
+conarm.general.leveling.basexp.tooltip=Сколько опыта нужно броне для первого уровня
+conarm.general.leveling.levelingmultiplier=Множитель опыта
+conarm.general.leveling.levelingmultiplier.tooltip=Во сколько раз растёт нужный опыт с каждым уровнем
+conarm.general.leveling.xpgaincap=Предел опыта за удар
+conarm.general.leveling.xpgaincap.tooltip=Максимум опыта, который броня может получить от одного удара
+conarm.general.leveling.damagetoxp=Множитель урона в опыт
+conarm.general.leveling.damagetoxp.tooltip=Множитель для расчёта опыта из полученного урона (например, 0.25 значит, что 25% урона превращается в опыт)
+
+#################
+#     Blocks    #
+#################
+tile.conarm.armorforge.name=Кузня брони
+tile.conarm.armorstation.name=Станция брони
+tile.conarm.soft_obsidian.name=Нестабильный обсидиан
+
+#################
+#     Items     #
+#################
+item.conarm.book.name=Материалы и вы – Оружейное дополнение
+item.conarm.book.tooltip=Дополнение к книге, нужной каждому инженеру\nот C4
+
+item.conarm.polishing_kit.name=полировочный набор
+item.conarm.polishing_kit.tooltip=Объедините с песком.\nПоднимает твёрдость брони до уровня этого материала.
+
+item.conarm.travel_belt_base.name=Пояс путешественника (основа)
+item.conarm.travel_belt.name=Пояс путешественника (запас)
+item.conarm.travel_potion.name=Пояс путешественника (алхимия)
+item.conarm.travel_sack.name=Ранец путешественника
+item.conarm.travel_goggles_base.name=Очки путешественника (основа)
+item.conarm.travel_goggles.name=Очки путешественника (приближение)
+item.conarm.travel_night.name=Очки путешественника (ночное зрение)
+item.conarm.travel_soul.name=Очки путешественника (зрение душ)
+item.conarm.travel_cloak.name=Плащ путешественника (основа)
+item.conarm.travel_sneak.name=Плащ путешественника (невидимость)
+item.conarm.travel_slowfall.name=Плащ путешественника (плавное падение)
+
+item.conarm.resist_mat.name=Стойкость
+item.conarm.resist_mat.tooltip=Улучшение «Стойкость»
+item.conarm.resist_mat_fire.name=Огнеупорность
+item.conarm.resist_mat_fire.tooltip=Улучшение «Огнеупорность»
+item.conarm.resist_mat_blast.name=Взрывоустойчивость
+item.conarm.resist_mat_blast.tooltip=Улучшение «Взрывоустойчивость»
+item.conarm.resist_mat_proj.name=Защита от снарядов
+item.conarm.resist_mat_proj.tooltip=Улучшение «Защита от снарядов»
+
+item.conarm.gauntlet_mat.name=Латная перчатка (основа)
+item.conarm.gauntlet_mat_attack.name=Перчатка мощи
+item.conarm.gauntlet_mat_attack.tooltip=Улучшение «Мощь»
+item.conarm.gauntlet_mat_speed.name=Перчатка ловкости
+item.conarm.gauntlet_mat_speed.tooltip=Улучшение «Ловкость»
+item.conarm.gauntlet_mat_reach.name=Перчатка дальней хватки
+item.conarm.gauntlet_mat_reach.tooltip=Улучшение «Телекинез»
+
+item.conarm.invisible_ink.name=Невидимые чернила
+item.conarm.invisible_ink.tooltip=Улучшение «Скрытность»
+
+item.conarm.frosty_soles.name=Ледяные подошвы
+item.conarm.frosty_soles.tooltip=Улучшение «Морозность»
+
+#################
+#      GUI      #
+#################
+gui.armorforge.name=Кузня брони
+gui.armorstation.name=Станция брони
+gui.armorstation.preview=Предпросмотр
+
+gui.error.modifier_on_station=Улучшения можно накладывать только в Кузне брони.
+
+#################
+#     Armor     #
+#################
+appearance.classic.name=Классический
+
+item.conarm.helmet.name=шлем
+item.conarm.helmet.desc=Шлем защищает голову от опасностей.\nУлучшенное зрение продаётся отдельно.
+item.conarm.chestplate.name=нагрудник
+item.conarm.chestplate.desc=Нагрудник бережёт грудь от ран и ушибов.
+item.conarm.leggings.name=поножи
+item.conarm.leggings.desc=Поножи отлично берегут ваши ноги в целости и сохранности.
+item.conarm.boots.name=ботинки
+item.conarm.boots.desc=С этими ботинками можно навсегда забыть об ушибленных пальцах.
+
+item.conarm.armor_trim.name=отделка брони
+item.conarm.helmet_core.name=ядро шлема
+item.conarm.chest_core.name=ядро нагрудника
+item.conarm.leggings_core.name=ядро поножей
+item.conarm.boots_core.name=ядро ботинок
+item.conarm.armor_plate.name=пластины брони
+
+#################
+#  Keybindings  #
+#################
+key.conarm.category=Construct's Armory: аксессуары
+key.conarm.toggle_boots.desc=Ботинки
+key.conarm.toggle_chest.desc=Нагрудник
+key.conarm.toggle_helm.desc=Шлем
+key.conarm.toggle_leg.desc=Поножи
+
+#################
+#     Traits    #
+#################
+modifier.absorbent_armor.name=Впитывание
+modifier.absorbent_armor.desc=§oВпитывает лучше других марок.§r\nБроня крепнет в воде и под дождём.
+modifier.alien_armor.name=modifier.alien.name
+modifier.alien_armor.desc=modifier.alien.desc
+modifier.ambitious_armor.name=Амбициозность
+modifier.ambitious_armor.desc=§oНа пути к славе!§r\nВы получаете больше опыта.
+modifier.aridiculous_armor.name=modifier.aridiculous.name
+modifier.aridiculous_armor.desc=§oПоддай жару!§r\nБроня работает лучше в жарких местах.
+modifier.aquaspeed_armor.name=Водолюбие
+modifier.aquaspeed_armor.desc=§oЧто-то здесь сыровато!§r\nВода не мешает броне, а дождливые вечера она просто обожает.
+modifier.autoforge_armor.name=Самоковка
+modifier.autoforge_armor.desc=§oТак горячо, что чинится само!§r\nБроня сама восстанавливается в огне.
+modifier.baconlicious_armor.name=modifier.baconlicious.name
+modifier.baconlicious_armor.desc=§oБЕКОН!§r\nИногда при получении удара выпадает бекон.
+modifier.blessed_armor.name=Благословение
+modifier.blessed_armor.desc=§oБерегись, нежить.§r\nОслабляет нежить при соприкосновении.
+modifier.bouncy_armor.name=Прыгучесть
+modifier.bouncy_armor.desc=§oКак батут, только всегда с собой!§r\nВаша броня так и норовит подпрыгнуть.
+modifier.calcic_armor.name=Кальциевость
+modifier.calcic_armor.desc=§oДля крепких костей.§r\nМолоко бодрит и вас, и вашу броню.
+modifier.cheap_armor.name=modifier.cheap.name
+modifier.cheap_armor.desc=§oВыгодная сделка!§r\nПри починке броня получает больше прочности.
+modifier.cheapskate_armor.name=modifier.cheapskate.name
+modifier.cheapskate_armor.desc=§oПохоже на подделку!§r\nКамень плох. У брони меньше прочности.
+modifier.combustible_armor.name=Горючесть
+modifier.combustible_armor.desc=§oЭта броня в огнееее!§r\nКогда вы горите, поджигает существ вокруг.
+modifier.dense_armor.name=modifier.dense.name
+modifier.dense_armor.desc=§oТвёрже... ещё твёрже.§r\nЧем меньше у брони прочности, тем медленнее она изнашивается.
+modifier.dramatic_armor.name=Драматизм
+modifier.dramatic_armor.desc=§oВот это адреналин!§r\nМожет выручить в трудную минуту. А может, и нет!
+modifier.duritos_ranch_armor.name=modifier.duritos.name
+modifier.duritos_ranch_armor.desc=§oНа вкус не так хорошо, как звучит.§r\nБроня служит дольше... как правило.
+modifier.ecological_armor.name=modifier.ecological.name
+modifier.ecological_armor.desc=modifier.ecological.desc
+modifier.enderport_armor.name=Эндерпорт
+modifier.enderport_armor.desc=§oКак раз вовремя!§r\nМожет телепортировать вас из опасной ситуации.
+modifier.featherweight_armor.name=Невесомость
+modifier.featherweight_armor.desc=§oЛёгкая, как пёрышко.§r\nВы так легки, что меньше страдаете от падений.
+modifier.heavy_armor.name=modifier.heavy.name
+modifier.heavy_armor.desc=§oА ты вообще качаешься?§r\nОслабляет отбрасывание.
+modifier.indomitable_armor.name=Неукротимость
+modifier.indomitable_armor.desc=§oНикогда не сдавайся!§r\nДелает броню эффективнее.
+modifier.infernal_armor.name=Инфернальность
+modifier.infernal_armor.desc=§oПоследний писк демонической моды.§r\nДополнительная защита от мобов не из Незера.
+modifier.infernal_armor.extra=Против мобов не из Незера: +%s
+modifier.invigorating_armor.name=Бодрость
+modifier.invigorating_armor.desc=§oКакое приятное чувство!§r\nКаким-то образом вы становитесь здоровее.
+modifier.lightweight_armor.name=modifier.lightweight.name
+modifier.lightweight_armor.desc=§oБыстрый, как ветер!§r\nПовышает скорость передвижения.
+modifier.lightweight_armor.extra=Прибавка скорости: +%s
+modifier.magnetic_armor.name=modifier.magnetic.name
+modifier.magnetic_armor.desc=§oПритягательная броня!§r\nПредметы так и тянутся к вам.
+modifier.mundane_armor.name=Приземлённость
+modifier.mundane_armor.desc=§oОружие — для слабаков!§r\nДополнительная защита от безоружных противников.
+modifier.mundane_armor.extra=Против безоружных: +%s
+modifier.mundane1_armor.extra=Против безоружных: +%s
+modifier.petravidity_armor.name=Камнелюбие
+modifier.petravidity_armor.desc=§oСтолько камня, надо рассмотреть весь!§r\nБроня любит камень и работает лучше рядом с ним.
+modifier.prideful_armor.name=Гордыня
+modifier.prideful_armor.desc=§oЧто такое нарциссизм?§r\nПосле удара по вам вы становитесь крепче ценой прочности.
+modifier.rough_armor.name=Шершавость
+modifier.rough_armor.desc=§oПожалуйста, не трогайте.§r\nРанит нападающих при касании, урон зависит от прочности.
+modifier.rough_armor.extra=Урон шершавости: +%s
+modifier.shielding_armor.name=Экранирование
+modifier.shielding_armor.desc=§oНу и где теперь твоя магия?§r\nДополнительная защита от магических атак.
+modifier.slimey_armor.name=modifier.slimey.name
+modifier.slimey_armor.desc=modifier.slimey.desc
+modifier.skeletal_armor.name=Скелетность
+modifier.skeletal_armor.desc=§oКрепкая, как... кости?§r\nПовышает твёрдость брони.
+modifier.spiny_armor.name=Колючесть
+modifier.spiny_armor.desc=§oЭто иглы, а не шипы!§r\nКогда вас ранят, нападающий получает урон за счёт прочности брони.
+modifier.steady_armor.name=Устойчивость
+modifier.steady_armor.desc=§oНи шагу назад!§r\nВас отбрасывает меньше, а нападающего — сильнее.
+modifier.subterranean_armor.name=Подземность
+modifier.subterranean_armor.desc=§oНужно копать глубже!§r\nНиже уровня моря броня изнашивается медленнее.
+modifier.superhot_armor.name=Сверхжар
+modifier.superhot_armor.desc=§oСВЕРХ. ЖАР.§r\nКогда вы горите, вы бегаете быстрее!
+modifier.tasty_armor.name=modifier.tasty.name
+modifier.tasty_armor.desc=§oАм-ням-ням§r\nТак вкусно пахнет... Лучше съесть броню, чем умереть с голоду.
+modifier.vengeful_armor.name=Мстительность
+modifier.vengeful_armor.desc=§oОни за это заплатят!§r\nТем, кто вас ударил, может стать нехорошо.
+modifier.voltaic_armor.name=Электризация
+modifier.voltaic_armor.desc=§oБзззз!§r\nУдары по вам заряжают броню. Когда она полностью заряжена, следующий удар разряжает её и ранит всех существ вокруг.
+
+#################
+#   Modifiers   #
+#################
+modifier.amphibious_armor.name=Земноводность
+modifier.amphibious_armor.desc=§oПодводная мода.§r\nПозволяет какое-то время дышать под водой.
+modifier.amphibious_armor.extra=Запас кислорода: %d
+modifier.blast_resistant_armor.name=Взрывоустойчивость
+modifier.blast_resistant_armor.desc=§oВсе в укрытие!§r\nДополнительная защита от взрывов.
+modifier.concealed_armor.name=Скрытность
+modifier.concealed_armor.desc=§oЧто это на тебе надето?§r\nВаша броня становится невидимой.
+modifier.diamond_armor.name=modifier.diamond.name
+modifier.diamond_armor.desc=modifier.diamond.desc
+modifier.dexterous_armor.name=Ловкость
+modifier.dexterous_armor.desc=§oЛовкость рук, и никакого мошенничества.§r\nПовышает скорость атаки.
+modifier.emerald_armor.name=modifier.emerald.name
+modifier.emerald_armor.desc=modifier.emerald.desc
+modifier.extratrait_armor.name=modifier.extratrait.name
+modifier.extratrait_armor.desc=modifier.extratrait.desc
+modifier.fire_resistant_armor.name=Огнеупорность
+modifier.fire_resistant_armor.desc=§oГореть — это плохо.§r\nДополнительная защита от огня.
+modifier.frostwalker_armor.name=Морозность
+modifier.frostwalker_armor.desc=§oСохраняйте хладнокровие.§r\nВаши ноги так холодны, что вода вокруг замерзает.
+modifier.glowing_armor.name=Свечение
+modifier.glowing_armor.desc=§oСияй ярче§r\nКогда становится слишком темно, ботинки жертвуют частью себя, чтобы осветить вам путь.
+modifier.high_stride_armor.name=Широкий шаг
+modifier.high_stride_armor.desc=§oПрыгать — удел варваров.§r\nВы можете подниматься на более высокие ступени.
+modifier.mending_armor.name=modifier.mending_moss.name
+modifier.mending_armor.desc=§oОн живой!§r\nПодобранный опыт копится в броне. Она понемногу тратит его, чтобы восстанавливать прочность.
+modifier.mending_armor.extra=Запас опыта: %d
+modifier.parasitic_armor.name=Паразитизм
+modifier.parasitic_armor.desc=§oВместе навсегдааа...§r\nБроня питается вами, чтобы чинить себя.
+modifier.polished_armor.name=Полировка
+modifier.polished_armor.desc=§oЧем ярче блеск, тем лучше!§r\nТвёрдость поднята до уровня материала «%s».
+modifier.powerful_armor.name=Мощь
+modifier.powerful_armor.desc=§oМоя рука пылает красным... почти белым!§r\nПовышает урон от атак.
+modifier.projectile_resistant_armor.name=Защита от снарядов
+modifier.projectile_resistant_armor.desc=§oПодойдите ближе, трусы!§r\nДополнительная защита от снарядов.
+modifier.reinforced_armor.name=modifier.reinforced.name
+modifier.reinforced_armor.desc=modifier.reinforced.desc
+modifier.reinforced_armor.extra=Укрепление: %s
+modifier.resistant_armor.name=Стойкость
+modifier.resistant_armor.desc=§oКрепче, сильнее!§r\nДополнительная защита от любых атак.
+modifier.shulkerweight_armor.name=Шалкерная лёгкость
+modifier.shulkerweight_armor.desc=§oСмотрите, там, в небе!§r\nУсиливает прыжок.
+modifier.soulbound_armor.name=modifier.soulbound.name
+modifier.soulbound_armor.desc=§oСладкая парочка!§r\nВы любите свою броню. Даже смерть не разлучит вас.
+modifier.speedy_armor.name=Быстрота
+modifier.speedy_armor.name2=Быстрее
+modifier.speedy_armor.name3=Ещё быстрее
+modifier.speedy_armor.desc=§oВперёд, на полной скорости!§r\nПовышает скорость передвижения.
+modifier.speedy_armor.extra=Прибавка скорости: +%s
+modifier.sticky_armor.name=Липкость
+modifier.sticky_armor.desc=§oСнимите это, снимите!§r\nЗамедляет всех, кто вас атакует.
+modifier.telekinetic_armor.name=Телекинез
+modifier.telekinetic_armor.desc=§oБольше не скованы реальностью.§r\nВы дотягиваетесь дальше.
+
+#################
+#  Accessories  #
+#################
+modifier.travel_belt_armor.name=Пояс путешественника (запас)
+modifier.travel_belt_armor.desc=§oСиловая тренировка!§r\nДаёт вторую панель быстрого доступа.
+modifier.potion_belt_armor.name=Пояс путешественника (алхимия)
+modifier.potion_belt_armor.desc=§oДля любителей зелий.§r\nДаёт особое хранилище для зелий.
+modifier.travel_sack_armor.name=Ранец путешественника
+modifier.travel_sack_armor.desc=§oВсё ценное — при себе!§r\nДаёт дополнительное хранилище.
+modifier.travel_sneak_armor.name=Плащ путешественника (невидимость)
+modifier.travel_sneak_armor.desc=§oТише, тише~§r\nДаёт невидимость.
+modifier.travel_slowfall_armor.name=Плащ путешественника (плавное падение)
+modifier.travel_slowfall_armor.desc=§oПусть ветер несёт тебя.§r\nВы падаете гораздо медленнее.
+modifier.travel_goggles_armor.name=Очки путешественника (приближение)
+modifier.travel_goggles_armor.desc=§oВзгляд наскво-о-озь брони.§r\nМожно приближать далёкие виды.
+modifier.night_vision_armor.name=Очки путешественника (ночное зрение)
+modifier.night_vision_armor.desc=§oЯ — сама ночь.§r\nВы видите в темноте.
+modifier.soul_sight_armor.name=Очки путешественника (зрение душ)
+modifier.soul_sight_armor.desc=§oВ сердце — великая сила.§r\nВы видите души существ поблизости.
+
+accessory.head.tooltip=Аксессуар для шлема
+accessory.chest.tooltip=Аксессуар для нагрудника
+accessory.legs.tooltip=Аксессуар для поножей
+accessory.feet.tooltip=Аксессуар для ботинок
+accessory.toggle.tooltip=Состояние: %s
+accessory.toggle.active=включён
+accessory.toggle.inactive=выключен
+
+#################
+#     Stats     #
+#################
+stat.core.name=Ядро
+stat.core.durability.name=Прочность
+stat.core.durability.desc=Базовый множитель для расчёта прочности.\nОбычно определяет большую часть прочности брони.
+stat.core.defense.name=Защита
+stat.core.defense.desc=Сколько защиты даёт материал.\nИтоговая броня зависит и от защиты, и от того, какая это часть доспеха.
+
+stat.plates.name=Пластины
+stat.plates.modifier.name=Квантификатор
+stat.plates.modifier.desc=Насколько материал подходит для пластин брони.\nНа это число умножается общая прочность брони.
+stat.plates.durability.name=stat.core.durability.name
+stat.plates.durability.desc=Насколько материал устойчив к износу.\nМножитель прочности брони изменяется на это значение.
+stat.plates.toughness.name=Твёрдость
+stat.plates.toughness.desc=Сколько очков твёрдости брони даёт предмет.
+
+stat.trim.name=Отделка
+stat.trim.durability.name=stat.core.durability.name
+stat.trim.durability.desc=Насколько отделка меняет множитель прочности брони.
+
+#################
+#  Tinkers keys #
+#################
+# Этих ключей нет в русском переводе Tinkers' Construct, а броня ссылается на них
+modifier.heavy.name=Тяжесть
+modifier.heavy.desc=§oА ты вообще качаешься?§r\nНе даёт себя отбросить.
+modifier.extratrait.name=Тиснение
+modifier.extratrait.desc=§oКак магия, только лучше!§r\nНа предмете вытиснена сила материала «%s»: он получает часть его черт.

@@ -1,0 +1,25 @@
+{
+  "armormodifier": "emerald_armor",
+  "text": [
+    {
+      "text": "Изумрудное покрытие делает броню прочнее,"
+    },
+    {
+      "text": "\n"
+    },
+    {
+      "text": "а жителей — завистливее."
+    }
+  ],
+  "effects": [
+    "+50% к базовой прочности",
+    "Одноразово",
+    "Возмутительно!"
+  ],
+  "demoArmor": [
+    "conarm:helmet",
+    "conarm:chestplate",
+    "conarm:leggings",
+    "conarm:boots"
+  ]
+}

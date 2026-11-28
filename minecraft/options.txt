@@ -15,7 +15,7 @@ difficulty:2
 fancyGraphics:false
 ao:2
 renderClouds:fast
-resourcePacks:["ClearGlassPack1.11or1.12"]
+resourcePacks:["ClearGlassPack1.11or1.12","ConArm-RU"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:ru_ru

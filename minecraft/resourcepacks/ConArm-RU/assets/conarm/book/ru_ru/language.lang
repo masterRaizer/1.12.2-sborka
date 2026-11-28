@@ -1,0 +1,14 @@
+// Sections
+welcome=Добро пожаловать
+materials=Материалы брони
+armory=Броня
+modifiers=Улучшения
+accessories=Аксессуары
+
+armor.title=Броня
+armor.properties=Характеристики:
+
+material.craft_partbuilder=Можно сделать в столе для вырезки частей
+material.craft_casting=Можно отлить из: %s
+
+modifier.effect=Эффекты:

@@ -1,0 +1,26 @@
+{
+  "armormodifier": "diamond_armor",
+  "text": [
+    {
+      "text": "Алмазное покрытие делает броню прочнее и"
+    },
+    {
+      "text": "\n"
+    },
+    {
+      "text": "усиливает её защиту."
+    }
+  ],
+  "effects": [
+    "Дополнительная прочность",
+    "Небольшая прибавка к защите и твёрдости",
+    "Одноразово",
+    "Потрясающе!"
+  ],
+  "demoArmor": [
+    "conarm:helmet",
+    "conarm:chestplate",
+    "conarm:leggings",
+    "conarm:boots"
+  ]
+}
